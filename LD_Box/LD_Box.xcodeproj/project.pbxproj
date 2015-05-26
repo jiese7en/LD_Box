@@ -14,7 +14,6 @@
 		690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D71B0E1F5E00C39BC5 /* LaunchScreen.xib */; };
 		690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D91B0E1F5E00C39BC5 /* Main.storyboard */; };
 		690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690F98DE1B0E1FD400C39BC5 /* Images.xcassets */; };
-		690F98E11B0E201100C39BC5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 690F98E01B0E201100C39BC5 /* Info.plist */; };
 		690F98FC1B0E2E9500C39BC5 /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 690F98FB1B0E2E9500C39BC5 /* LDBaseVC.m */; };
 		690F99061B0E2F8600C39BC5 /* LDMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 690F99041B0E2F8600C39BC5 /* LDMainVC.m */; };
 		690F99071B0E2F8600C39BC5 /* LDMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F99051B0E2F8600C39BC5 /* LDMainVC.xib */; };
@@ -469,7 +468,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LD;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = LD;
 				TargetAttributes = {
 					690F98A81B0E15DC00C39BC5 = {
@@ -506,7 +505,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				691452641B120858009892FA /* LDMusicVC.xib in Resources */,
-				690F98E11B0E201100C39BC5 /* Info.plist in Resources */,
 				690F99071B0E2F8600C39BC5 /* LDMainVC.xib in Resources */,
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
