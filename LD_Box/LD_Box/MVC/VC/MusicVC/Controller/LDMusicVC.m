@@ -75,9 +75,14 @@
     return self;
 }
 
+- (void)layoutTableView {
+    self.musicTableView.tableFooterView = [[UIView alloc] init];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self layoutTableView];
     
     self.isMusicPlay = NO;
     
