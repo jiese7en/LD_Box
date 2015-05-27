@@ -21,7 +21,7 @@
 		691452641B120858009892FA /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691452621B120858009892FA /* LDMusicVC.xib */; };
 		6914526F1B121532009892FA /* LDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914526E1B121532009892FA /* LDBaseButton.m */; };
 		691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452721B121C65009892FA /* LDMusicBeanModel.m */; };
-		697FB9391B14329E009833DD /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 697FB9381B14329E009833DD /* LDMedia.m */; };
+		697342121B14CBC300D46B15 /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 697342111B14CBC300D46B15 /* LDMedia.m */; };
 		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
 		6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318D1B0F66B600D7263B /* UIColor+LDColor.m */; };
@@ -67,8 +67,8 @@
 		6914526E1B121532009892FA /* LDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseButton.m; sourceTree = "<group>"; };
 		691452711B121C65009892FA /* LDMusicBeanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBeanModel.h; sourceTree = "<group>"; };
 		691452721B121C65009892FA /* LDMusicBeanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBeanModel.m; sourceTree = "<group>"; };
-		697FB9371B14329E009833DD /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
-		697FB9381B14329E009833DD /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
+		697342101B14CBC300D46B15 /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
+		697342111B14CBC300D46B15 /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
 		698431861B0F63FC00D7263B /* LDLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoger.h; sourceTree = "<group>"; };
 		698431871B0F63FC00D7263B /* LDLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLoger.m; sourceTree = "<group>"; };
 		698431891B0F640300D7263B /* LDAVAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAVAudioManager.h; sourceTree = "<group>"; };
@@ -390,6 +390,15 @@
 			path = CommonModel;
 			sourceTree = "<group>";
 		};
+		6973420F1B14CB9700D46B15 /* LDMedia */ = {
+			isa = PBXGroup;
+			children = (
+				697342101B14CBC300D46B15 /* LDMedia.h */,
+				697342111B14CBC300D46B15 /* LDMedia.m */,
+			);
+			path = LDMedia;
+			sourceTree = "<group>";
+		};
 		697FB9351B143016009833DD /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,8 +409,7 @@
 		697FB9361B1431C0009833DD /* LD_VC_Uint */ = {
 			isa = PBXGroup;
 			children = (
-				697FB9371B14329E009833DD /* LDMedia.h */,
-				697FB9381B14329E009833DD /* LDMedia.m */,
+				6973420F1B14CB9700D46B15 /* LDMedia */,
 			);
 			path = LD_VC_Uint;
 			sourceTree = "<group>";
@@ -563,7 +571,7 @@
 				698431881B0F63FC00D7263B /* LDLoger.m in Sources */,
 				690F98B21B0E15DC00C39BC5 /* AppDelegate.m in Sources */,
 				6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */,
-				697FB9391B14329E009833DD /* LDMedia.m in Sources */,
+				697342121B14CBC300D46B15 /* LDMedia.m in Sources */,
 				691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */,
 				690F99061B0E2F8600C39BC5 /* LDMainVC.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,

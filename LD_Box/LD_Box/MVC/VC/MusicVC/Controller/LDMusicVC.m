@@ -278,6 +278,9 @@
 }
 
 - (IBAction)clickPreMusicBtn:(UIButton *)sender {
+    
+    //doRefreshBtn
+    
 }
 
 - (IBAction)clickNextMusicBtn:(UIButton *)sender {
