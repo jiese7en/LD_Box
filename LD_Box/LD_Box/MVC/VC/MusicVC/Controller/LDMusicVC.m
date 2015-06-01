@@ -95,9 +95,6 @@
 
 #pragma mark - Property
 
-- (IBAction)playMusicBtn:(UIButton *)sender {
-}
-
 - (NSMutableArray *)musicArr {
     if (_musicArr) {
         return _musicArr;

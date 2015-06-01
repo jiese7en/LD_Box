@@ -14,9 +14,6 @@
 		690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D71B0E1F5E00C39BC5 /* LaunchScreen.xib */; };
 		690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D91B0E1F5E00C39BC5 /* Main.storyboard */; };
 		690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690F98DE1B0E1FD400C39BC5 /* Images.xcassets */; };
-		690F98FC1B0E2E9500C39BC5 /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 690F98FB1B0E2E9500C39BC5 /* LDBaseVC.m */; };
-		690F99061B0E2F8600C39BC5 /* LDMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 690F99041B0E2F8600C39BC5 /* LDMainVC.m */; };
-		690F99071B0E2F8600C39BC5 /* LDMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F99051B0E2F8600C39BC5 /* LDMainVC.xib */; };
 		691452631B120858009892FA /* LDMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452611B120858009892FA /* LDMusicVC.m */; };
 		691452641B120858009892FA /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691452621B120858009892FA /* LDMusicVC.xib */; };
 		6914526F1B121532009892FA /* LDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914526E1B121532009892FA /* LDBaseButton.m */; };
@@ -25,6 +22,16 @@
 		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
 		6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318D1B0F66B600D7263B /* UIColor+LDColor.m */; };
+		69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346311B1849AE00F8D69C /* MLNavigationController.m */; };
+		69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346341B184D9C00F8D69C /* LDBaseNC.m */; };
+		69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346371B184E6A00F8D69C /* LDBaseVC.m */; };
+		69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3463B1B18560000F8D69C /* LDDrawer.m */; };
+		69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346441B18593A00F8D69C /* LDDrawerVC.m */; };
+		69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */; };
+		69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */; };
+		69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */; };
+		69F346511B18674200F8D69C /* LDMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3464F1B18674200F8D69C /* LDMainVC.m */; };
+		69F346521B18674200F8D69C /* LDMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F346501B18674200F8D69C /* LDMainVC.xib */; };
 		DE9E44DBA67F56BED2D0007E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDF99F59B378B3511FED4E1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +61,6 @@
 		690F98DA1B0E1F5E00C39BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		690F98DE1B0E1FD400C39BC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		690F98E01B0E201100C39BC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		690F98FA1B0E2E9500C39BC5 /* LDBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseVC.h; sourceTree = "<group>"; };
-		690F98FB1B0E2E9500C39BC5 /* LDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseVC.m; sourceTree = "<group>"; };
-		690F99031B0E2F8600C39BC5 /* LDMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainVC.h; sourceTree = "<group>"; };
-		690F99041B0E2F8600C39BC5 /* LDMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainVC.m; sourceTree = "<group>"; };
-		690F99051B0E2F8600C39BC5 /* LDMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMainVC.xib; sourceTree = "<group>"; };
 		691452601B120858009892FA /* LDMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicVC.h; sourceTree = "<group>"; };
 		691452611B120858009892FA /* LDMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicVC.m; sourceTree = "<group>"; };
 		691452621B120858009892FA /* LDMusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicVC.xib; sourceTree = "<group>"; };
@@ -75,6 +77,24 @@
 		6984318A1B0F640300D7263B /* LDAVAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAVAudioManager.m; sourceTree = "<group>"; };
 		6984318C1B0F66B600D7263B /* UIColor+LDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LDColor.h"; sourceTree = "<group>"; };
 		6984318D1B0F66B600D7263B /* UIColor+LDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LDColor.m"; sourceTree = "<group>"; };
+		69F346301B1849AE00F8D69C /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
+		69F346311B1849AE00F8D69C /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
+		69F346331B184D9C00F8D69C /* LDBaseNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseNC.h; sourceTree = "<group>"; };
+		69F346341B184D9C00F8D69C /* LDBaseNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseNC.m; sourceTree = "<group>"; };
+		69F346361B184E6A00F8D69C /* LDBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseVC.h; sourceTree = "<group>"; };
+		69F346371B184E6A00F8D69C /* LDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseVC.m; sourceTree = "<group>"; };
+		69F3463A1B18560000F8D69C /* LDDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDrawer.h; sourceTree = "<group>"; };
+		69F3463B1B18560000F8D69C /* LDDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDrawer.m; sourceTree = "<group>"; };
+		69F346431B18593A00F8D69C /* LDDrawerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDrawerVC.h; sourceTree = "<group>"; };
+		69F346441B18593A00F8D69C /* LDDrawerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDrawerVC.m; sourceTree = "<group>"; };
+		69F346461B185F2400F8D69C /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		69F346491B18663200F8D69C /* LDLeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLeftMenuVC.h; sourceTree = "<group>"; };
+		69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLeftMenuVC.m; sourceTree = "<group>"; };
+		69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDLeftMenuVC.xib; sourceTree = "<group>"; };
+		69F3464E1B18674200F8D69C /* LDMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainVC.h; sourceTree = "<group>"; };
+		69F3464F1B18674200F8D69C /* LDMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainVC.m; sourceTree = "<group>"; };
+		69F346501B18674200F8D69C /* LDMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMainVC.xib; sourceTree = "<group>"; };
 		BC254ED88F1F6B3DFEC354B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,10 +237,14 @@
 		690F98E31B0E21F700C39BC5 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				690F98FA1B0E2E9500C39BC5 /* LDBaseVC.h */,
-				690F98FB1B0E2E9500C39BC5 /* LDBaseVC.m */,
 				6914526D1B121532009892FA /* LDBaseButton.h */,
 				6914526E1B121532009892FA /* LDBaseButton.m */,
+				69F346361B184E6A00F8D69C /* LDBaseVC.h */,
+				69F346371B184E6A00F8D69C /* LDBaseVC.m */,
+				69F346331B184D9C00F8D69C /* LDBaseNC.h */,
+				69F346341B184D9C00F8D69C /* LDBaseNC.m */,
+				69F346431B18593A00F8D69C /* LDDrawerVC.h */,
+				69F346441B18593A00F8D69C /* LDDrawerVC.m */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -228,7 +252,7 @@
 		690F98E41B0E226200C39BC5 /* Third_Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				69EF5FCE1B183DEE00CDB9D6 /* MLNavigationController */,
+				69F3462F1B18498300F8D69C /* MLNavigationController */,
 			);
 			path = Third_Libraries;
 			sourceTree = "<group>";
@@ -289,6 +313,7 @@
 		690F98EB1B0E261A00C39BC5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				69F3463D1B18569200F8D69C /* LeftMenuVC */,
 				691452591B1207DC009892FA /* MusicVC */,
 				690F98F91B0E2E3800C39BC5 /* MainVC */,
 			);
@@ -332,27 +357,11 @@
 		690F98F91B0E2E3800C39BC5 /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
-				690F99081B0E2F9000C39BC5 /* View */,
-				690F99021B0E2F4800C39BC5 /* Controller */,
+				69F3464E1B18674200F8D69C /* LDMainVC.h */,
+				69F3464F1B18674200F8D69C /* LDMainVC.m */,
+				69F346501B18674200F8D69C /* LDMainVC.xib */,
 			);
 			path = MainVC;
-			sourceTree = "<group>";
-		};
-		690F99021B0E2F4800C39BC5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				690F99031B0E2F8600C39BC5 /* LDMainVC.h */,
-				690F99041B0E2F8600C39BC5 /* LDMainVC.m */,
-				690F99051B0E2F8600C39BC5 /* LDMainVC.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		690F99081B0E2F9000C39BC5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		691452591B1207DC009892FA /* MusicVC */ = {
@@ -410,6 +419,7 @@
 		697FB9361B1431C0009833DD /* LD_VC_Uint */ = {
 			isa = PBXGroup;
 			children = (
+				69F346391B18559700F8D69C /* Drawer */,
 				6973420F1B14CB9700D46B15 /* LDMedia */,
 			);
 			path = LD_VC_Uint;
@@ -422,11 +432,34 @@
 			path = VM;
 			sourceTree = "<group>";
 		};
-		69EF5FCE1B183DEE00CDB9D6 /* MLNavigationController */ = {
+		69F3462F1B18498300F8D69C /* MLNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				69F346301B1849AE00F8D69C /* MLNavigationController.h */,
+				69F346311B1849AE00F8D69C /* MLNavigationController.m */,
 			);
 			path = MLNavigationController;
+			sourceTree = "<group>";
+		};
+		69F346391B18559700F8D69C /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				69F3463A1B18560000F8D69C /* LDDrawer.h */,
+				69F3463B1B18560000F8D69C /* LDDrawer.m */,
+				69F346461B185F2400F8D69C /* MMExampleDrawerVisualStateManager.h */,
+				69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		69F3463D1B18569200F8D69C /* LeftMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				69F346491B18663200F8D69C /* LDLeftMenuVC.h */,
+				69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */,
+				69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */,
+			);
+			path = LeftMenuVC;
 			sourceTree = "<group>";
 		};
 		7697D2E2654C514304D4189E /* Frameworks */ = {
@@ -521,10 +554,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				691452641B120858009892FA /* LDMusicVC.xib in Resources */,
-				690F99071B0E2F8600C39BC5 /* LDMainVC.xib in Resources */,
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
+				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
 				690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */,
+				69F346521B18674200F8D69C /* LDMainVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,17 +610,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
+				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
 				698431881B0F63FC00D7263B /* LDLoger.m in Sources */,
 				690F98B21B0E15DC00C39BC5 /* AppDelegate.m in Sources */,
 				6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */,
 				697342121B14CBC300D46B15 /* LDMedia.m in Sources */,
 				691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */,
-				690F99061B0E2F8600C39BC5 /* LDMainVC.m in Sources */,
+				69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,
 				691452631B120858009892FA /* LDMusicVC.m in Sources */,
+				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
+				69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */,
+				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
+				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
+				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
+				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
 				6914526F1B121532009892FA /* LDBaseButton.m in Sources */,
-				690F98FC1B0E2E9500C39BC5 /* LDBaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LD_Box/Supporting_Files/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -721,6 +762,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LD_Box/Supporting_Files/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

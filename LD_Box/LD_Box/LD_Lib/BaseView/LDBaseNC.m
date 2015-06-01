@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
-#import "LDBaseVC.h"
+#import "LDBaseNC.h"
 
-@interface LDBaseVC ()
+@interface LDBaseNC ()
 
 @end
 
-@implementation LDBaseVC
+@implementation LDBaseNC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MMDrawerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13DA832413268C04F33E0310</key>
+		<key>11F262A7A4EF8844CF5FA811</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76FCCC87DDA7CCDE1CCEC450</key>
+		<key>3C7F586CC29980FBFAE5B637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>532BDD6CC20591CBB9B6CA31</key>
 		<dict>
 			<key>primary</key>
 			<true/>

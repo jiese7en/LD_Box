@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MLNavigationController.h"
 
-@interface LDBaseVC : UIViewController
+@interface LDBaseNC : MLNavigationController
 
 @end

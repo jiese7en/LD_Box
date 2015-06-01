@@ -1,18 +1,18 @@
 //
-//  LDBaseVC.m
+//  LDBaseDrawerVC.m
 //  LD_Box
 //
 //  Created by Jay on 15/5/29.
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
-#import "LDBaseVC.h"
+#import "LDDrawerVC.h"
 
-@interface LDBaseVC ()
+@interface LDDrawerVC ()
 
 @end
 
-@implementation LDBaseVC
+@implementation LDDrawerVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

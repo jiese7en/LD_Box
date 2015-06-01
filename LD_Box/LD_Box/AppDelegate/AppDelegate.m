@@ -13,6 +13,8 @@
 
 #import "LDLoger.h"
 #import "LDAVAudioManager.h"
+#import "LDDrawer.h"
+
 
 @interface AppDelegate ()
 
@@ -33,8 +35,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    LDMusicVC *mainVC = [[LDMusicVC alloc] init];
+    
+    LDMainVC *mainVC = [[LDMainVC alloc] init];
     self.window.rootViewController = mainVC;
+    
+//    LDMusicVC *mainVC = [[LDMusicVC alloc] init];
+//    self.window.rootViewController = mainVC;
+    
+//    self.window.rootViewController = [LDDrawer createDrawer];
+    
     
     return YES;
 }

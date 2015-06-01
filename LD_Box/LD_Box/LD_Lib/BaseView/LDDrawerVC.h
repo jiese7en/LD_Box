@@ -1,13 +1,13 @@
 //
-//  LDBaseVC.h
+//  LDBaseDrawerVC.h
 //  LD_Box
 //
 //  Created by Jay on 15/5/29.
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MMDrawerController.h"
 
-@interface LDBaseVC : UIViewController
+@interface LDDrawerVC : MMDrawerController
 
 @end

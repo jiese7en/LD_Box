@@ -1,10 +1,24 @@
 PODS:
   - MJExtension (2.1.0)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
 
 DEPENDENCIES:
   - MJExtension (~> 2.1.0)
+  - MMDrawerController (~> 0.6.0)
 
 SPEC CHECKSUMS:
   MJExtension: d4fd481247b262b59cf8cdf5815661cff460aaa2
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
 
 COCOAPODS: 0.37.1
