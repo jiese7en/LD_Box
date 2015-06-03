@@ -18,6 +18,12 @@
 		691452641B120858009892FA /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691452621B120858009892FA /* LDMusicVC.xib */; };
 		6914526F1B121532009892FA /* LDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914526E1B121532009892FA /* LDBaseButton.m */; };
 		691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452721B121C65009892FA /* LDMusicBeanModel.m */; };
+		696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */; };
+		696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA57C1B1DDEA500B04259 /* LDBLEConnectVC.m */; };
+		696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696BA57D1B1DDEA500B04259 /* LDBLEConnectVC.xib */; };
+		696BA5911B1DE32700B04259 /* libiBluz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696BA5901B1DE32700B04259 /* libiBluz.a */; };
+		696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */; };
+		696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */; };
 		697342121B14CBC300D46B15 /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 697342111B14CBC300D46B15 /* LDMedia.m */; };
 		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
@@ -69,6 +75,30 @@
 		6914526E1B121532009892FA /* LDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseButton.m; sourceTree = "<group>"; };
 		691452711B121C65009892FA /* LDMusicBeanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBeanModel.h; sourceTree = "<group>"; };
 		691452721B121C65009892FA /* LDMusicBeanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBeanModel.m; sourceTree = "<group>"; };
+		696BA5771B1DDACA00B04259 /* LDLeftMenuVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLeftMenuVM.h; sourceTree = "<group>"; };
+		696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLeftMenuVM.m; sourceTree = "<group>"; };
+		696BA57B1B1DDEA500B04259 /* LDBLEConnectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEConnectVC.h; sourceTree = "<group>"; };
+		696BA57C1B1DDEA500B04259 /* LDBLEConnectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEConnectVC.m; sourceTree = "<group>"; };
+		696BA57D1B1DDEA500B04259 /* LDBLEConnectVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDBLEConnectVC.xib; sourceTree = "<group>"; };
+		696BA5821B1DE32700B04259 /* AlarmEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmEntry.h; sourceTree = "<group>"; };
+		696BA5831B1DE32700B04259 /* AlarmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmManager.h; sourceTree = "<group>"; };
+		696BA5841B1DE32700B04259 /* AuxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuxManager.h; sourceTree = "<group>"; };
+		696BA5851B1DE32700B04259 /* BluzDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluzDevice.h; sourceTree = "<group>"; };
+		696BA5861B1DE32700B04259 /* BluzDirect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluzDirect.h; sourceTree = "<group>"; };
+		696BA5871B1DE32700B04259 /* BluzManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluzManager.h; sourceTree = "<group>"; };
+		696BA5881B1DE32700B04259 /* BluzManagerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluzManagerData.h; sourceTree = "<group>"; };
+		696BA5891B1DE32700B04259 /* FolderEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderEntry.h; sourceTree = "<group>"; };
+		696BA58A1B1DE32700B04259 /* GlobalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalManager.h; sourceTree = "<group>"; };
+		696BA58B1B1DE32700B04259 /* MusicEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicEntry.h; sourceTree = "<group>"; };
+		696BA58C1B1DE32700B04259 /* MusicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicManager.h; sourceTree = "<group>"; };
+		696BA58D1B1DE32700B04259 /* RadioEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioEntry.h; sourceTree = "<group>"; };
+		696BA58E1B1DE32700B04259 /* RadioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioManager.h; sourceTree = "<group>"; };
+		696BA58F1B1DE32700B04259 /* RingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingEntry.h; sourceTree = "<group>"; };
+		696BA5901B1DE32700B04259 /* libiBluz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiBluz.a; sourceTree = "<group>"; };
+		696BA5921B1DE78A00B04259 /* LDBLEConnectVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEConnectVM.h; sourceTree = "<group>"; };
+		696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEConnectVM.m; sourceTree = "<group>"; };
+		696BA5951B1DE88D00B04259 /* LDBluzDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBluzDeviceModel.h; sourceTree = "<group>"; };
+		696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBluzDeviceModel.m; sourceTree = "<group>"; };
 		697342101B14CBC300D46B15 /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
 		697342111B14CBC300D46B15 /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
 		698431861B0F63FC00D7263B /* LDLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoger.h; sourceTree = "<group>"; };
@@ -103,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696BA5911B1DE32700B04259 /* libiBluz.a in Frameworks */,
 				DE9E44DBA67F56BED2D0007E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +283,7 @@
 		690F98E41B0E226200C39BC5 /* Third_Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				696BA5801B1DE32700B04259 /* iBluz */,
 				69F3462F1B18498300F8D69C /* MLNavigationController */,
 			);
 			path = Third_Libraries;
@@ -313,6 +345,7 @@
 		690F98EB1B0E261A00C39BC5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				696BA57A1B1DDE3000B04259 /* BLEConnectVC */,
 				69F3463D1B18569200F8D69C /* LeftMenuVC */,
 				691452591B1207DC009892FA /* MusicVC */,
 				690F98F91B0E2E3800C39BC5 /* MainVC */,
@@ -396,8 +429,52 @@
 			children = (
 				691452711B121C65009892FA /* LDMusicBeanModel.h */,
 				691452721B121C65009892FA /* LDMusicBeanModel.m */,
+				696BA5951B1DE88D00B04259 /* LDBluzDeviceModel.h */,
+				696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */,
 			);
 			path = CommonModel;
+			sourceTree = "<group>";
+		};
+		696BA57A1B1DDE3000B04259 /* BLEConnectVC */ = {
+			isa = PBXGroup;
+			children = (
+				696BA57B1B1DDEA500B04259 /* LDBLEConnectVC.h */,
+				696BA57C1B1DDEA500B04259 /* LDBLEConnectVC.m */,
+				696BA57D1B1DDEA500B04259 /* LDBLEConnectVC.xib */,
+				696BA5921B1DE78A00B04259 /* LDBLEConnectVM.h */,
+				696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */,
+			);
+			path = BLEConnectVC;
+			sourceTree = "<group>";
+		};
+		696BA5801B1DE32700B04259 /* iBluz */ = {
+			isa = PBXGroup;
+			children = (
+				696BA5811B1DE32700B04259 /* include */,
+				696BA5901B1DE32700B04259 /* libiBluz.a */,
+			);
+			path = iBluz;
+			sourceTree = "<group>";
+		};
+		696BA5811B1DE32700B04259 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				696BA5821B1DE32700B04259 /* AlarmEntry.h */,
+				696BA5831B1DE32700B04259 /* AlarmManager.h */,
+				696BA5841B1DE32700B04259 /* AuxManager.h */,
+				696BA5851B1DE32700B04259 /* BluzDevice.h */,
+				696BA5861B1DE32700B04259 /* BluzDirect.h */,
+				696BA5871B1DE32700B04259 /* BluzManager.h */,
+				696BA5881B1DE32700B04259 /* BluzManagerData.h */,
+				696BA5891B1DE32700B04259 /* FolderEntry.h */,
+				696BA58A1B1DE32700B04259 /* GlobalManager.h */,
+				696BA58B1B1DE32700B04259 /* MusicEntry.h */,
+				696BA58C1B1DE32700B04259 /* MusicManager.h */,
+				696BA58D1B1DE32700B04259 /* RadioEntry.h */,
+				696BA58E1B1DE32700B04259 /* RadioManager.h */,
+				696BA58F1B1DE32700B04259 /* RingEntry.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		6973420F1B14CB9700D46B15 /* LDMedia */ = {
@@ -458,6 +535,8 @@
 				69F346491B18663200F8D69C /* LDLeftMenuVC.h */,
 				69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */,
 				69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */,
+				696BA5771B1DDACA00B04259 /* LDLeftMenuVM.h */,
+				696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */,
 			);
 			path = LeftMenuVC;
 			sourceTree = "<group>";
@@ -558,6 +637,7 @@
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
 				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
 				690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */,
+				696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */,
 				69F346521B18674200F8D69C /* LDMainVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,15 +697,19 @@
 				697342121B14CBC300D46B15 /* LDMedia.m in Sources */,
 				691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */,
 				69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */,
+				696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,
 				691452631B120858009892FA /* LDMusicVC.m in Sources */,
 				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
 				69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */,
+				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
 				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
 				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
 				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
+				696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */,
+				696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */,
 				6914526F1B121532009892FA /* LDBaseButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,6 +836,10 @@
 				INFOPLIST_FILE = LD_Box/Supporting_Files/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LD_Box/Third_Libraries/iBluz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -764,6 +852,10 @@
 				INFOPLIST_FILE = LD_Box/Supporting_Files/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LD_Box/Third_Libraries/iBluz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

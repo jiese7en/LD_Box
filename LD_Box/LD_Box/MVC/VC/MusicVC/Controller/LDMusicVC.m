@@ -70,7 +70,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        self.title = @"播放歌曲";
     }
     return self;
 }

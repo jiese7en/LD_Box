@@ -35,14 +35,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    
-    LDMainVC *mainVC = [[LDMainVC alloc] init];
-    self.window.rootViewController = mainVC;
-    
-//    LDMusicVC *mainVC = [[LDMusicVC alloc] init];
-//    self.window.rootViewController = mainVC;
-    
-//    self.window.rootViewController = [LDDrawer createDrawer];
+    self.window.rootViewController = [LDDrawer createDrawer];
     
     
     return YES;

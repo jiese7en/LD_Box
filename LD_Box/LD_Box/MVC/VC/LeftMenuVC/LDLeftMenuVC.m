@@ -7,8 +7,22 @@
 //
 
 #import "LDLeftMenuVC.h"
+#import "LDLeftMenuVM.h"
 
-@interface LDLeftMenuVC ()
+//MMDrawer
+#import "UIViewController+MMDrawerController.h"
+
+//VC
+#import "LDBaseNC.h"
+#import "LDBLEConnectVC.h"
+#import "LDMusicVC.h"
+
+
+@interface LDLeftMenuVC () <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *leftTableView;
+
+@property (nonatomic, strong) LDLeftMenuVM *viewModel;
 
 @end
 
@@ -20,7 +34,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Left";
+        self.title = @"LeftMenu";
     }
     return self;
 }
@@ -29,12 +43,64 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
+}
+
+#pragma mark - property
+
+- (LDLeftMenuVM *)viewModel {
+    if (_viewModel) {
+        return _viewModel;
+    }
+    
+    _viewModel = [[LDLeftMenuVM alloc] init];
+    
+    return _viewModel;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.viewModel.titleArr.count;
 }
 
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *cellID = @"leftMenuCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    NSString *text = [self.viewModel.titleArr objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = text;
+    
+    return cell;
+}
 
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    if (indexPath.row == 0) {
+        LDMusicVC *vc = [[LDMusicVC alloc] init];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+    else if (indexPath.row == 1) {
+        LDBLEConnectVC *vc = [[LDBLEConnectVC alloc] init];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+}
 
 @end
