@@ -16,7 +16,7 @@
 #import "LDBaseNC.h"
 #import "LDBLEConnectVC.h"
 #import "LDMusicVC.h"
-
+#import "LDMainVC.h"
 
 @interface LDLeftMenuVC () <UITableViewDataSource, UITableViewDelegate>
 
@@ -92,12 +92,17 @@
     
     
     if (indexPath.row == 0) {
-        LDMusicVC *vc = [[LDMusicVC alloc] init];
+        LDMainVC *vc = [LDMainVC sharedInstance];
         LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
         [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
     }
     else if (indexPath.row == 1) {
-        LDBLEConnectVC *vc = [[LDBLEConnectVC alloc] init];
+        LDMusicVC *vc = [LDMusicVC sharedInstance];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+    else if (indexPath.row == 2) {
+        LDBLEConnectVC *vc = [LDBLEConnectVC sharedInstance];
         LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
         [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
     }

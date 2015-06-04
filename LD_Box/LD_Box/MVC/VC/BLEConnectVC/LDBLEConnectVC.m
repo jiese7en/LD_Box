@@ -34,6 +34,20 @@
 }
 
 
+//单例
++ (LDBLEConnectVC *)sharedInstance
+{
+    static dispatch_once_t pred = 0;
+    __strong static LDBLEConnectVC * _sharedObject = nil;
+    dispatch_once(&pred, ^{
+        _sharedObject = [[self alloc] init];
+    });
+    
+    return _sharedObject;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -47,7 +61,7 @@
     }
     
     _viewModel = [[LDBLEConnectVM alloc] init];
-    
+    _viewModel.delegate = self;
     return _viewModel;
 }
 
@@ -87,9 +101,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     LDBluzDeviceModel *deviceModel = [self.viewModel.deviceArr objectAtIndex:indexPath.row];
-    CBPeripheral *peripheral = deviceModel.peripheral;
     
-    if(peripheral.state == CBPeripheralStateConnected) {
+    if([deviceModel isConnected]) {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"断开蓝牙连接?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
         [alert show];
@@ -97,21 +110,31 @@
     else{
         [SVProgressHUD showWithStatus:@"正在连接"];
         
-        
+        [self.viewModel connect:deviceModel];
     }
 }
 
 #pragma mark - LDBLEConnectVMDelegate
 - (void)foundPeripheralFinished {
+    
+    [SVProgressHUD dismiss];
+    
     [self.deviceTableView reloadData];
+}
+
+- (void)connectedPeripheralFinished {
+    [SVProgressHUD dismiss];
+    
 }
 
 #pragma mark - UIButton
 
 - (IBAction)refreshBtn:(UIButton *)sender {
     
-    [self.viewModel scanStart];
+    [SVProgressHUD showWithStatus:@"正在搜索设备"];
     
+    
+    [self.viewModel scanStart];
     
 }
 @end

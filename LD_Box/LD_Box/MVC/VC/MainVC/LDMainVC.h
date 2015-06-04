@@ -10,4 +10,7 @@
 
 @interface LDMainVC : LDBaseVC
 
+//单例
++ (LDMainVC *)sharedInstance;
+
 @end

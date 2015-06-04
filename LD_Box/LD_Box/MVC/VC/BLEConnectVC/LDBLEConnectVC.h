@@ -10,4 +10,7 @@
 
 @interface LDBLEConnectVC : LDBaseVC
 
+//单例
++ (LDBLEConnectVC *)sharedInstance;
+
 @end

@@ -17,6 +17,19 @@
 
 #pragma mark - Init
 
+//单例
++ (LDMainVC *)sharedInstance
+{
+    static dispatch_once_t pred = 0;
+    __strong static LDMainVC * _sharedObject = nil;
+    dispatch_once(&pred, ^{
+        _sharedObject = [[self alloc] init];
+    });
+    
+    return _sharedObject;
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

@@ -10,4 +10,7 @@
 
 @interface LDMusicVC : LDBaseVC
 
+//单例
++ (LDMusicVC *)sharedInstance;
+
 @end

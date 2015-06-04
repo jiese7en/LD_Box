@@ -14,10 +14,10 @@
 		690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D71B0E1F5E00C39BC5 /* LaunchScreen.xib */; };
 		690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690F98D91B0E1F5E00C39BC5 /* Main.storyboard */; };
 		690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690F98DE1B0E1FD400C39BC5 /* Images.xcassets */; };
-		691452631B120858009892FA /* LDMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452611B120858009892FA /* LDMusicVC.m */; };
-		691452641B120858009892FA /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691452621B120858009892FA /* LDMusicVC.xib */; };
 		6914526F1B121532009892FA /* LDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914526E1B121532009892FA /* LDBaseButton.m */; };
 		691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452721B121C65009892FA /* LDMusicBeanModel.m */; };
+		696A76A01B209293001867C7 /* LDMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A769E1B209293001867C7 /* LDMusicVC.m */; };
+		696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696A769F1B209293001867C7 /* LDMusicVC.xib */; };
 		696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */; };
 		696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA57C1B1DDEA500B04259 /* LDBLEConnectVC.m */; };
 		696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696BA57D1B1DDEA500B04259 /* LDBLEConnectVC.xib */; };
@@ -67,14 +67,14 @@
 		690F98DA1B0E1F5E00C39BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		690F98DE1B0E1FD400C39BC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		690F98E01B0E201100C39BC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		691452601B120858009892FA /* LDMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicVC.h; sourceTree = "<group>"; };
-		691452611B120858009892FA /* LDMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicVC.m; sourceTree = "<group>"; };
-		691452621B120858009892FA /* LDMusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicVC.xib; sourceTree = "<group>"; };
 		6914526C1B12106D009892FA /* LDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDevice.h; sourceTree = "<group>"; };
 		6914526D1B121532009892FA /* LDBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseButton.h; sourceTree = "<group>"; };
 		6914526E1B121532009892FA /* LDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseButton.m; sourceTree = "<group>"; };
 		691452711B121C65009892FA /* LDMusicBeanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBeanModel.h; sourceTree = "<group>"; };
 		691452721B121C65009892FA /* LDMusicBeanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBeanModel.m; sourceTree = "<group>"; };
+		696A769D1B209293001867C7 /* LDMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicVC.h; sourceTree = "<group>"; };
+		696A769E1B209293001867C7 /* LDMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicVC.m; sourceTree = "<group>"; };
+		696A769F1B209293001867C7 /* LDMusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicVC.xib; sourceTree = "<group>"; };
 		696BA5771B1DDACA00B04259 /* LDLeftMenuVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLeftMenuVM.h; sourceTree = "<group>"; };
 		696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLeftMenuVM.m; sourceTree = "<group>"; };
 		696BA57B1B1DDEA500B04259 /* LDBLEConnectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEConnectVC.h; sourceTree = "<group>"; };
@@ -400,20 +400,11 @@
 		691452591B1207DC009892FA /* MusicVC */ = {
 			isa = PBXGroup;
 			children = (
-				697FB93A1B143F77009833DD /* VM */,
-				6914525F1B12082E009892FA /* Controller */,
+				696A769D1B209293001867C7 /* LDMusicVC.h */,
+				696A769E1B209293001867C7 /* LDMusicVC.m */,
+				696A769F1B209293001867C7 /* LDMusicVC.xib */,
 			);
 			path = MusicVC;
-			sourceTree = "<group>";
-		};
-		6914525F1B12082E009892FA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				691452601B120858009892FA /* LDMusicVC.h */,
-				691452611B120858009892FA /* LDMusicVC.m */,
-				691452621B120858009892FA /* LDMusicVC.xib */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		691452651B120F1F009892FA /* LDDefine */ = {
@@ -500,13 +491,6 @@
 				6973420F1B14CB9700D46B15 /* LDMedia */,
 			);
 			path = LD_VC_Uint;
-			sourceTree = "<group>";
-		};
-		697FB93A1B143F77009833DD /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
 			sourceTree = "<group>";
 		};
 		69F3462F1B18498300F8D69C /* MLNavigationController */ = {
@@ -632,10 +616,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				691452641B120858009892FA /* LDMusicVC.xib in Resources */,
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
 				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
+				696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */,
 				690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */,
 				696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */,
 				69F346521B18674200F8D69C /* LDMainVC.xib in Resources */,
@@ -691,6 +675,7 @@
 			files = (
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
 				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
+				696A76A01B209293001867C7 /* LDMusicVC.m in Sources */,
 				698431881B0F63FC00D7263B /* LDLoger.m in Sources */,
 				690F98B21B0E15DC00C39BC5 /* AppDelegate.m in Sources */,
 				6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */,
@@ -699,7 +684,6 @@
 				69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */,
 				696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,
-				691452631B120858009892FA /* LDMusicVC.m in Sources */,
 				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
 				69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */,
 				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
