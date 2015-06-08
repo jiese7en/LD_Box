@@ -29,10 +29,6 @@
 		6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713A1B24AABD00E586DB /* LDBLEManager.m */; };
 		698271401B24B22900E586DB /* LDMusicBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713E1B24B22900E586DB /* LDMusicBoxVC.m */; };
 		698271411B24B22900E586DB /* LDMusicBoxVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6982713F1B24B22900E586DB /* LDMusicBoxVC.xib */; };
-		698271471B24B55900E586DB /* LDMusicLrcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 698271451B24B55900E586DB /* LDMusicLrcVC.m */; };
-		698271481B24B55900E586DB /* LDMusicLrcVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698271461B24B55900E586DB /* LDMusicLrcVC.xib */; };
-		6982714C1B24B56B00E586DB /* LDMusicMemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982714A1B24B56B00E586DB /* LDMusicMemoVC.m */; };
-		6982714D1B24B56B00E586DB /* LDMusicMemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6982714B1B24B56B00E586DB /* LDMusicMemoVC.xib */; };
 		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
 		6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318D1B0F66B600D7263B /* UIColor+LDColor.m */; };
@@ -40,6 +36,11 @@
 		699811031B255B290066B7C3 /* LDMusicEQVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699811011B255B290066B7C3 /* LDMusicEQVC.xib */; };
 		699811041B255B290066B7C3 /* LDMusicEQVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 699811021B255B290066B7C3 /* LDMusicEQVC.m */; };
 		699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 699811061B255C2D0066B7C3 /* LDMusicEQVM.m */; };
+		699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 699FEE871B25CAE40018F141 /* LDMusicLrcVC.m */; };
+		699FEE8A1B25CAE40018F141 /* LDMusicLrcVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699FEE881B25CAE40018F141 /* LDMusicLrcVC.xib */; };
+		699FEE8E1B25CAEE0018F141 /* LDMusicMemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 699FEE8C1B25CAEE0018F141 /* LDMusicMemoVC.m */; };
+		699FEE8F1B25CAEE0018F141 /* LDMusicMemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699FEE8D1B25CAEE0018F141 /* LDMusicMemoVC.xib */; };
+		699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 699FEE931B25D8F80018F141 /* LDMusicBoxVM.m */; };
 		69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346311B1849AE00F8D69C /* MLNavigationController.m */; };
 		69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346341B184D9C00F8D69C /* LDBaseNC.m */; };
 		69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346371B184E6A00F8D69C /* LDBaseVC.m */; };
@@ -120,12 +121,6 @@
 		6982713D1B24B22900E586DB /* LDMusicBoxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBoxVC.h; sourceTree = "<group>"; };
 		6982713E1B24B22900E586DB /* LDMusicBoxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBoxVC.m; sourceTree = "<group>"; };
 		6982713F1B24B22900E586DB /* LDMusicBoxVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicBoxVC.xib; sourceTree = "<group>"; };
-		698271441B24B55900E586DB /* LDMusicLrcVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicLrcVC.h; sourceTree = "<group>"; };
-		698271451B24B55900E586DB /* LDMusicLrcVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicLrcVC.m; sourceTree = "<group>"; };
-		698271461B24B55900E586DB /* LDMusicLrcVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicLrcVC.xib; sourceTree = "<group>"; };
-		698271491B24B56B00E586DB /* LDMusicMemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicMemoVC.h; sourceTree = "<group>"; };
-		6982714A1B24B56B00E586DB /* LDMusicMemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicMemoVC.m; sourceTree = "<group>"; };
-		6982714B1B24B56B00E586DB /* LDMusicMemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicMemoVC.xib; sourceTree = "<group>"; };
 		698431861B0F63FC00D7263B /* LDLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoger.h; sourceTree = "<group>"; };
 		698431871B0F63FC00D7263B /* LDLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLoger.m; sourceTree = "<group>"; };
 		698431891B0F640300D7263B /* LDAVAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAVAudioManager.h; sourceTree = "<group>"; };
@@ -139,6 +134,14 @@
 		699811021B255B290066B7C3 /* LDMusicEQVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicEQVC.m; sourceTree = "<group>"; };
 		699811051B255C2D0066B7C3 /* LDMusicEQVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicEQVM.h; sourceTree = "<group>"; };
 		699811061B255C2D0066B7C3 /* LDMusicEQVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicEQVM.m; sourceTree = "<group>"; };
+		699FEE861B25CAE40018F141 /* LDMusicLrcVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicLrcVC.h; sourceTree = "<group>"; };
+		699FEE871B25CAE40018F141 /* LDMusicLrcVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicLrcVC.m; sourceTree = "<group>"; };
+		699FEE881B25CAE40018F141 /* LDMusicLrcVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicLrcVC.xib; sourceTree = "<group>"; };
+		699FEE8B1B25CAEE0018F141 /* LDMusicMemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicMemoVC.h; sourceTree = "<group>"; };
+		699FEE8C1B25CAEE0018F141 /* LDMusicMemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicMemoVC.m; sourceTree = "<group>"; };
+		699FEE8D1B25CAEE0018F141 /* LDMusicMemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicMemoVC.xib; sourceTree = "<group>"; };
+		699FEE921B25D8F80018F141 /* LDMusicBoxVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBoxVM.h; sourceTree = "<group>"; };
+		699FEE931B25D8F80018F141 /* LDMusicBoxVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBoxVM.m; sourceTree = "<group>"; };
 		69F346301B1849AE00F8D69C /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
 		69F346311B1849AE00F8D69C /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		69F346331B184D9C00F8D69C /* LDBaseNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseNC.h; sourceTree = "<group>"; };
@@ -382,9 +385,9 @@
 		690F98EB1B0E261A00C39BC5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				699FEE911B25CB160018F141 /* MusicLrcVC */,
+				699FEE901B25CAF20018F141 /* MusicMemoVC */,
 				699810FF1B255AE70066B7C3 /* MusicEQVC */,
-				698271431B24B52600E586DB /* MusicLrcVC */,
-				698271421B24B51C00E586DB /* MusicMemoVC */,
 				6982713C1B24B19F00E586DB /* MusicBoxVC */,
 				696BA57A1B1DDE3000B04259 /* BLEConnectVC */,
 				69F3463D1B18569200F8D69C /* LeftMenuVC */,
@@ -549,28 +552,10 @@
 				6982713D1B24B22900E586DB /* LDMusicBoxVC.h */,
 				6982713E1B24B22900E586DB /* LDMusicBoxVC.m */,
 				6982713F1B24B22900E586DB /* LDMusicBoxVC.xib */,
+				699FEE921B25D8F80018F141 /* LDMusicBoxVM.h */,
+				699FEE931B25D8F80018F141 /* LDMusicBoxVM.m */,
 			);
 			path = MusicBoxVC;
-			sourceTree = "<group>";
-		};
-		698271421B24B51C00E586DB /* MusicMemoVC */ = {
-			isa = PBXGroup;
-			children = (
-				698271491B24B56B00E586DB /* LDMusicMemoVC.h */,
-				6982714A1B24B56B00E586DB /* LDMusicMemoVC.m */,
-				6982714B1B24B56B00E586DB /* LDMusicMemoVC.xib */,
-			);
-			path = MusicMemoVC;
-			sourceTree = "<group>";
-		};
-		698271431B24B52600E586DB /* MusicLrcVC */ = {
-			isa = PBXGroup;
-			children = (
-				698271441B24B55900E586DB /* LDMusicLrcVC.h */,
-				698271451B24B55900E586DB /* LDMusicLrcVC.m */,
-				698271461B24B55900E586DB /* LDMusicLrcVC.xib */,
-			);
-			path = MusicLrcVC;
 			sourceTree = "<group>";
 		};
 		699810FF1B255AE70066B7C3 /* MusicEQVC */ = {
@@ -583,6 +568,26 @@
 				699811061B255C2D0066B7C3 /* LDMusicEQVM.m */,
 			);
 			path = MusicEQVC;
+			sourceTree = "<group>";
+		};
+		699FEE901B25CAF20018F141 /* MusicMemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				699FEE8B1B25CAEE0018F141 /* LDMusicMemoVC.h */,
+				699FEE8C1B25CAEE0018F141 /* LDMusicMemoVC.m */,
+				699FEE8D1B25CAEE0018F141 /* LDMusicMemoVC.xib */,
+			);
+			path = MusicMemoVC;
+			sourceTree = "<group>";
+		};
+		699FEE911B25CB160018F141 /* MusicLrcVC */ = {
+			isa = PBXGroup;
+			children = (
+				699FEE861B25CAE40018F141 /* LDMusicLrcVC.h */,
+				699FEE871B25CAE40018F141 /* LDMusicLrcVC.m */,
+				699FEE881B25CAE40018F141 /* LDMusicLrcVC.xib */,
+			);
+			path = MusicLrcVC;
 			sourceTree = "<group>";
 		};
 		69F3462F1B18498300F8D69C /* MLNavigationController */ = {
@@ -710,13 +715,13 @@
 			files = (
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
-				6982714D1B24B56B00E586DB /* LDMusicMemoVC.xib in Resources */,
 				699811031B255B290066B7C3 /* LDMusicEQVC.xib in Resources */,
 				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
+				699FEE8A1B25CAE40018F141 /* LDMusicLrcVC.xib in Resources */,
+				699FEE8F1B25CAEE0018F141 /* LDMusicMemoVC.xib in Resources */,
 				696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */,
 				698271411B24B22900E586DB /* LDMusicBoxVC.xib in Resources */,
 				690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */,
-				698271481B24B55900E586DB /* LDMusicLrcVC.xib in Resources */,
 				696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */,
 				69F346521B18674200F8D69C /* LDMainVC.xib in Resources */,
 			);
@@ -769,6 +774,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699FEE8E1B25CAEE0018F141 /* LDMusicMemoVC.m in Sources */,
 				699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */,
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
 				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
@@ -783,8 +789,6 @@
 				691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */,
 				69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */,
 				698271401B24B22900E586DB /* LDMusicBoxVC.m in Sources */,
-				6982714C1B24B56B00E586DB /* LDMusicMemoVC.m in Sources */,
-				698271471B24B55900E586DB /* LDMusicLrcVC.m in Sources */,
 				696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,
 				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
@@ -793,8 +797,10 @@
 				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
 				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
+				699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */,
 				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
 				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
+				699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
 				696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */,
 				696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */,

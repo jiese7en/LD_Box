@@ -44,4 +44,16 @@
  */
 - (CGSize)getUISize:(UIFont*)font limitWidth:(CGFloat)width;
 
+/**
+ *  把UInt32类型转成时间字符串
+ *
+ *  @param time 例:250
+ *
+ *  @return 例:@"4:10"
+ */
++ (NSString *)stringMinAndSecond:(UInt32)time;
+
+
+
+
 @end

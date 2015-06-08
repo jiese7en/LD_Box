@@ -53,6 +53,10 @@
     self.globalManager = [self.bluzManager getGlobalManager:delegate];
 }
 
+- (void)creatMusicManager:(id <MusicDelegate>)delegate {
+    self.musicManager = [self.bluzManager getMusicManager:delegate];
+}
+
 
 
 @end

@@ -8,19 +8,39 @@
 
 #import "LDBaseVC.h"
 #import "LDMusicBeanModel.h"
-#import "LDMusicMemoVC.h"
 #import "LDMusicLrcVC.h"
+#import "LDMusicMemoVC.h"
 
 @interface LDMusicBoxVC : LDBaseVC
 
+@property (nonatomic,strong) NSString *lyricStr;
+@property (nonatomic,strong) LDMusicBeanModel *musicBeanModel;
 
-@property(nonatomic,strong) LDMusicBeanModel *musicBeanModel;
 
-@property(nonatomic,strong) NSMutableArray *CBLPLMusicArr;
-@property(nonatomic,strong) NSMutableArray *tempArr;
-@property(nonatomic,strong) NSMutableArray *itemArr;
+@property (nonatomic,strong) NSMutableArray *tempArr;
+@property (nonatomic,strong) NSMutableArray *itemArr;
 
-@property(nonatomic,strong) LDMusicMemoVC *musicMemoVC;
-@property(nonatomic,strong) LDMusicLrcVC *musicLrcVC;
+@property (nonatomic,strong) LDMusicMemoVC *musicMemoVC;
+@property (nonatomic,strong) LDMusicLrcVC *musicLrcVC;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *singerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playTimeLabel;
+@property (weak, nonatomic) IBOutlet UIProgressView *playProgressView;
+@property (weak, nonatomic) IBOutlet UIImageView *coverImgView;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
+
+
+
+#pragma mark - UIButton
+
+- (IBAction)clickLoopBtn:(UIButton *)sender;
+- (IBAction)clickMusiclistBtn:(UIButton *)sender;
+- (IBAction)clickPlayBtn:(UIButton *)sender;
+- (IBAction)clickNextBtn:(UIButton *)sender;
+- (IBAction)clickPrevBtn:(UIButton *)sender;
 
 @end

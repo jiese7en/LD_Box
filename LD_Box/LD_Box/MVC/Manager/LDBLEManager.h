@@ -25,6 +25,10 @@
 
 @property (strong, nonatomic) id <GlobalManager> globalManager;
 
+@property (strong, nonatomic) id <MusicManager> musicManager;
+
 - (void)creatGlobalManager:(id <GlobalDelegate>)delegate;
+
+- (void)creatMusicManager:(id <MusicDelegate>)delegate;
 
 @end

@@ -73,4 +73,17 @@
     return size;
 }
 
+
++ (NSString *)stringMinAndSecond:(UInt32)time {
+    
+    int seconds = (int)time/1000;
+    int minute = 0;
+    if (seconds >= 60) {
+        int index = seconds / 60;
+        minute = index;
+        seconds = seconds - index * 60;
+    }
+    return [NSString stringWithFormat:@"%02d:%02d", minute, seconds];
+}
+
 @end
