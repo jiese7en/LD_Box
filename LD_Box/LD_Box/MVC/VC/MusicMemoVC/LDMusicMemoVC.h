@@ -10,4 +10,13 @@
 
 @interface LDMusicMemoVC : LDBaseVC
 
+@property (weak, nonatomic) IBOutlet UITableView *musicMemoTable;
+
+@property (strong, nonatomic) NSMutableArray *itemListArr;
+
+@property (assign, nonatomic) NSInteger lrcInt;
+
+- (void)loadDataItemArr:(NSMutableArray *)itemListArr;
+- (void)displaySongWord:(NSInteger)time;
+
 @end

@@ -58,9 +58,15 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "CPPickerView/Resources/shadowOverlay@2x.png"
+  install_resource "CPPickerView/Resources/stretchableGlass@2x.png"
+  install_resource "CPPickerView/Resources/wheelBackground@2x.png"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "CPPickerView/Resources/shadowOverlay@2x.png"
+  install_resource "CPPickerView/Resources/stretchableGlass@2x.png"
+  install_resource "CPPickerView/Resources/wheelBackground@2x.png"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 

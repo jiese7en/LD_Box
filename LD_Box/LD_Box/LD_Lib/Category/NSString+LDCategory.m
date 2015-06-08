@@ -7,6 +7,7 @@
 //
 
 #import "NSString+LDCategory.h"
+#import "LDDevice.h"
 
 @implementation NSString (LDCategory)
 
@@ -25,7 +26,7 @@
     }
 }
 
-+ (NSString *)bytes2String:(Byte*)bytes length:(int)length encode:(int)encode {
++ (NSString *)bytes2String:(Byte *)bytes length:(int)length encode:(int)encode {
     NSStringEncoding type = [self getEncodeType:encode];
     int count = 0;
     if (type == NSUTF16LittleEndianStringEncoding || type == NSUTF16BigEndianStringEncoding) {
@@ -49,6 +50,27 @@
         strRet = nil;
     }
     return strRet;
+}
+
+- (CGSize)getUISize:(UIFont*)font limitWidth:(CGFloat)width {
+
+    //注：这个宽：300 是你要显示的宽度既固定的宽度，高度可以依照自己的需求而定
+    CGSize size = CGSizeMake(width, 20000.0f);
+    if (IS_LATER_IOS7) {
+        //iOS 7.0 以上
+        NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:font, NSFontAttributeName,nil];
+        size =[self boundingRectWithSize:size options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:tdic context:nil].size;
+    }
+    else
+    {
+#ifndef __IPHONE_7_0
+        //iOS 6.0
+        if ([self respondsToSelector:@selector(sizeWithFont:constrainedToSize:lineBreakMode:)]) {
+            size = [self sizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByCharWrapping];
+        }
+#endif
+    }
+    return size;
 }
 
 @end

@@ -6,6 +6,12 @@
 // project.
 
 
+// CPPickerView
+#define COCOAPODS_POD_AVAILABLE_CPPickerView
+#define COCOAPODS_VERSION_MAJOR_CPPickerView 1
+#define COCOAPODS_VERSION_MINOR_CPPickerView 2
+#define COCOAPODS_VERSION_PATCH_CPPickerView 0
+
 // MJExtension
 #define COCOAPODS_POD_AVAILABLE_MJExtension
 #define COCOAPODS_VERSION_MAJOR_MJExtension 2

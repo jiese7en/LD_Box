@@ -9,5 +9,8 @@
 #import "LDBaseVC.h"
 
 @interface LDMusicLrcVC : LDBaseVC
+@property (weak, nonatomic) IBOutlet UILabel *musicLrcLabel;
+
+- (void)setMusicInfo:(NSString*)strInfo;
 
 @end

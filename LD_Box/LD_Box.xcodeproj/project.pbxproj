@@ -36,6 +36,10 @@
 		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
 		6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318D1B0F66B600D7263B /* UIColor+LDColor.m */; };
+		699810FE1B254A620066B7C3 /* UIFont+LDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 699810FD1B254A620066B7C3 /* UIFont+LDFont.m */; };
+		699811031B255B290066B7C3 /* LDMusicEQVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699811011B255B290066B7C3 /* LDMusicEQVC.xib */; };
+		699811041B255B290066B7C3 /* LDMusicEQVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 699811021B255B290066B7C3 /* LDMusicEQVC.m */; };
+		699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 699811061B255C2D0066B7C3 /* LDMusicEQVM.m */; };
 		69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346311B1849AE00F8D69C /* MLNavigationController.m */; };
 		69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346341B184D9C00F8D69C /* LDBaseNC.m */; };
 		69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346371B184E6A00F8D69C /* LDBaseVC.m */; };
@@ -128,6 +132,13 @@
 		6984318A1B0F640300D7263B /* LDAVAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAVAudioManager.m; sourceTree = "<group>"; };
 		6984318C1B0F66B600D7263B /* UIColor+LDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LDColor.h"; sourceTree = "<group>"; };
 		6984318D1B0F66B600D7263B /* UIColor+LDColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LDColor.m"; sourceTree = "<group>"; };
+		699810FC1B254A620066B7C3 /* UIFont+LDFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+LDFont.h"; sourceTree = "<group>"; };
+		699810FD1B254A620066B7C3 /* UIFont+LDFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LDFont.m"; sourceTree = "<group>"; };
+		699811001B255B290066B7C3 /* LDMusicEQVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicEQVC.h; sourceTree = "<group>"; };
+		699811011B255B290066B7C3 /* LDMusicEQVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicEQVC.xib; sourceTree = "<group>"; };
+		699811021B255B290066B7C3 /* LDMusicEQVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicEQVC.m; sourceTree = "<group>"; };
+		699811051B255C2D0066B7C3 /* LDMusicEQVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicEQVM.h; sourceTree = "<group>"; };
+		699811061B255C2D0066B7C3 /* LDMusicEQVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicEQVM.m; sourceTree = "<group>"; };
 		69F346301B1849AE00F8D69C /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
 		69F346311B1849AE00F8D69C /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		69F346331B184D9C00F8D69C /* LDBaseNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseNC.h; sourceTree = "<group>"; };
@@ -284,6 +295,8 @@
 				6984318D1B0F66B600D7263B /* UIColor+LDColor.m */,
 				698271351B24A67400E586DB /* NSString+LDCategory.h */,
 				698271361B24A67400E586DB /* NSString+LDCategory.m */,
+				699810FC1B254A620066B7C3 /* UIFont+LDFont.h */,
+				699810FD1B254A620066B7C3 /* UIFont+LDFont.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -369,6 +382,7 @@
 		690F98EB1B0E261A00C39BC5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				699810FF1B255AE70066B7C3 /* MusicEQVC */,
 				698271431B24B52600E586DB /* MusicLrcVC */,
 				698271421B24B51C00E586DB /* MusicMemoVC */,
 				6982713C1B24B19F00E586DB /* MusicBoxVC */,
@@ -559,6 +573,18 @@
 			path = MusicLrcVC;
 			sourceTree = "<group>";
 		};
+		699810FF1B255AE70066B7C3 /* MusicEQVC */ = {
+			isa = PBXGroup;
+			children = (
+				699811001B255B290066B7C3 /* LDMusicEQVC.h */,
+				699811021B255B290066B7C3 /* LDMusicEQVC.m */,
+				699811011B255B290066B7C3 /* LDMusicEQVC.xib */,
+				699811051B255C2D0066B7C3 /* LDMusicEQVM.h */,
+				699811061B255C2D0066B7C3 /* LDMusicEQVM.m */,
+			);
+			path = MusicEQVC;
+			sourceTree = "<group>";
+		};
 		69F3462F1B18498300F8D69C /* MLNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +711,7 @@
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
 				6982714D1B24B56B00E586DB /* LDMusicMemoVC.xib in Resources */,
+				699811031B255B290066B7C3 /* LDMusicEQVC.xib in Resources */,
 				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
 				696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */,
 				698271411B24B22900E586DB /* LDMusicBoxVC.xib in Resources */,
@@ -742,10 +769,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */,
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
 				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
 				6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */,
 				698271371B24A67400E586DB /* NSString+LDCategory.m in Sources */,
+				699811041B255B290066B7C3 /* LDMusicEQVC.m in Sources */,
 				696A76A01B209293001867C7 /* LDMusicVC.m in Sources */,
 				698431881B0F63FC00D7263B /* LDLoger.m in Sources */,
 				690F98B21B0E15DC00C39BC5 /* AppDelegate.m in Sources */,
@@ -759,6 +788,7 @@
 				696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */,
 				6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */,
 				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
+				699810FE1B254A620066B7C3 /* UIFont+LDFont.m in Sources */,
 				69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */,
 				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,

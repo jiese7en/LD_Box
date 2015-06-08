@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A65D62657D08B67FF515E29"
-               BuildableName = "libPods-MMDrawerController.a"
-               BlueprintName = "Pods-MMDrawerController"
+               BlueprintIdentifier = "2CDB05F57C6054EF13247683"
+               BuildableName = "libPods-CPPickerView.a"
+               BlueprintName = "Pods-CPPickerView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

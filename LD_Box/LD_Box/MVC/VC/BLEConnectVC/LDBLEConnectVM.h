@@ -23,12 +23,6 @@
 
 @property (nonatomic, assign) id <LDBLEConnectVMDelegate> delegate;
 
-
-
-
-
-
-
 /**
  *  例:FolderEntry
  */
