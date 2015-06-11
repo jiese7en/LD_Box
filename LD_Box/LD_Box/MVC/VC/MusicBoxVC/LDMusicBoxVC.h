@@ -7,18 +7,11 @@
 //
 
 #import "LDBaseVC.h"
-#import "LDMusicBeanModel.h"
 #import "LDMusicLrcVC.h"
 #import "LDMusicMemoVC.h"
 
 @interface LDMusicBoxVC : LDBaseVC
 
-@property (nonatomic,strong) NSString *lyricStr;
-@property (nonatomic,strong) LDMusicBeanModel *musicBeanModel;
-
-
-@property (nonatomic,strong) NSMutableArray *tempArr;
-@property (nonatomic,strong) NSMutableArray *itemArr;
 
 @property (nonatomic,strong) LDMusicMemoVC *musicMemoVC;
 @property (nonatomic,strong) LDMusicLrcVC *musicLrcVC;
@@ -32,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *coverImgView;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 @property (weak, nonatomic) IBOutlet UIButton *playBtn;
+@property (weak, nonatomic) IBOutlet UIButton *loopBtn;
 
 
 

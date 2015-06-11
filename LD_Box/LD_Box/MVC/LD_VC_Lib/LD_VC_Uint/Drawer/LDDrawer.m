@@ -12,6 +12,7 @@
 #import "LDBaseNC.h"
 #import "MMExampleDrawerVisualStateManager.h"
 #import "LDMusicVC.h"
+#import "LDMusicBoxVC.h"
 
 @interface LDDrawer ()
 
@@ -37,7 +38,7 @@
 
 + (LDDrawerVC *)createDrawer {
     
-    LDMainVC *mainVC = [[LDMainVC alloc] init];
+    LDMusicBoxVC *mainVC = [[LDMusicBoxVC alloc] init];
     LDBaseNC *mainNC = [[LDBaseNC alloc] initWithRootViewController:mainVC];
     
     LDLeftMenuVC *leftMenuVC = [[LDLeftMenuVC alloc] init];

@@ -51,6 +51,8 @@
 		69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */; };
 		69F346511B18674200F8D69C /* LDMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3464F1B18674200F8D69C /* LDMainVC.m */; };
 		69F346521B18674200F8D69C /* LDMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F346501B18674200F8D69C /* LDMainVC.xib */; };
+		69F763341B289CEA00C89F6F /* NSObject+LDUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F763331B289CEA00C89F6F /* NSObject+LDUserDefaults.m */; };
+		69F763371B28A60900C89F6F /* NSArray+LDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F763361B28A60900C89F6F /* NSArray+LDCategory.m */; };
 		DE9E44DBA67F56BED2D0007E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDF99F59B378B3511FED4E1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +162,10 @@
 		69F3464E1B18674200F8D69C /* LDMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainVC.h; sourceTree = "<group>"; };
 		69F3464F1B18674200F8D69C /* LDMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainVC.m; sourceTree = "<group>"; };
 		69F346501B18674200F8D69C /* LDMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMainVC.xib; sourceTree = "<group>"; };
+		69F763321B289CEA00C89F6F /* NSObject+LDUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LDUserDefaults.h"; sourceTree = "<group>"; };
+		69F763331B289CEA00C89F6F /* NSObject+LDUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LDUserDefaults.m"; sourceTree = "<group>"; };
+		69F763351B28A60900C89F6F /* NSArray+LDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LDCategory.h"; sourceTree = "<group>"; };
+		69F763361B28A60900C89F6F /* NSArray+LDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LDCategory.m"; sourceTree = "<group>"; };
 		BC254ED88F1F6B3DFEC354B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -300,6 +306,10 @@
 				698271361B24A67400E586DB /* NSString+LDCategory.m */,
 				699810FC1B254A620066B7C3 /* UIFont+LDFont.h */,
 				699810FD1B254A620066B7C3 /* UIFont+LDFont.m */,
+				69F763321B289CEA00C89F6F /* NSObject+LDUserDefaults.h */,
+				69F763331B289CEA00C89F6F /* NSObject+LDUserDefaults.m */,
+				69F763351B28A60900C89F6F /* NSArray+LDCategory.h */,
+				69F763361B28A60900C89F6F /* NSArray+LDCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -798,12 +808,14 @@
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
 				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
 				699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */,
+				69F763371B28A60900C89F6F /* NSArray+LDCategory.m in Sources */,
 				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
 				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
 				699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
 				696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */,
 				696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */,
+				69F763341B289CEA00C89F6F /* NSObject+LDUserDefaults.m in Sources */,
 				6914526F1B121532009892FA /* LDBaseButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

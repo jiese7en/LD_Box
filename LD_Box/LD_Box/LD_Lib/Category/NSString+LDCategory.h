@@ -54,6 +54,21 @@
 + (NSString *)stringMinAndSecond:(UInt32)time;
 
 
+/**
+ *  把歌词NSData转成NSString
+ *
+ *  @return NSString
+ */
++ (NSString *)convertLyricToString:(NSData *)lyricData;
+
+/**
+ *  转换成以秒为单位的时间计数器
+ *
+ *  @param formatTime 100
+ *
+ *  @return 0.0
+ */
++ (NSString *)timeToSecond:(NSString *)formatTime;
 
 
 @end
