@@ -55,6 +55,7 @@
 //是否全部加载完成了
 @property (nonatomic, assign) BOOL isLoadAllEnd;
 
+- (void)start;
 
 - (void)selectPlayMusic:(UInt32)index;
 
@@ -65,5 +66,7 @@
 - (void)playNext;
 
 - (void)playPrev;
+
+- (void)clearCBLPLMusic;
 
 @end

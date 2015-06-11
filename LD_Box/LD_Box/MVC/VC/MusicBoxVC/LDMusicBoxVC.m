@@ -10,6 +10,7 @@
 #import "LDMusicBoxVM.h"
 #import "NSString+LDCategory.h"
 #import "UIColor+LDColor.h"
+#import "LDMusicEQVC.h"
 
 @interface LDMusicBoxVC () <UITableViewDelegate, UITableViewDataSource, LDMusicBoxVMDelegate>
 
@@ -38,12 +39,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self layoutUI];
+    [self layoutUI];
+    
+    [self layoutRightItem];
+    
+    [self.viewModel start];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     
-#if 0
+
     [self addMusicInfo];
     
     self.mainScrollView.contentOffset = CGPointZero;
@@ -53,34 +58,44 @@
     self.coverImgView.image=[UIImage imageNamed: @"ic_album_cover_default.png"];
     
     [self.playBtn setImage:[UIImage imageNamed:@"ic_music_pause.png"] forState:UIControlStateNormal];
-#endif
+
 }
+
+- (void)layoutRightItem {
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"音效" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightItem:)];
+    
+    
+    self.navigationItem.rightBarButtonItem = item;
+}
+
+
 
 - (void)layoutUI {
     
-//    self.coverImgView.backgroundColor = [UIColor blackColor];
-//    
-//    self.mainRect = self.coverImgView.frame;
-//    self.mainRect = CGRectMake(0, 0, 320, 256);
-//    
-//    self.musicMemoVC.view.frame = CGRectMake(self.mainRect.size.width, self.mainRect.origin.y, self.mainRect.size.width, self.mainRect.size.height);
-//    self.musicLrcVC.view.frame = CGRectMake(self.mainRect.size.width*2, self.mainRect.origin.y, self.mainRect.size.width, self.mainRect.size.height);
-//    
-//    self.tableView = [[UITableView alloc] initWithFrame:self.mainRect];
-//    self.tableView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-//    self.tableView.backgroundColor = [UIColor clearColor];
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
-//    
-//    self.coverImgView.userInteractionEnabled=YES;
-//    
-//    self.mainScrollView.contentSize = CGSizeMake(self.mainRect.size.width*3, self.mainRect.size.height);
-    self.mainScrollView.backgroundColor = [UIColor clearColor];
-//    self.mainScrollView.contentOffset = CGPointZero;
+    self.coverImgView.backgroundColor = [UIColor blackColor];
     
-//    [self.mainScrollView addSubview:self.tableView];
-//    [self.mainScrollView addSubview:self.musicMemoVC.view];
-//    [self.mainScrollView addSubview:self.musicLrcVC.view];
+    self.mainRect = self.coverImgView.frame;
+    
+    self.musicMemoVC.view.frame = CGRectMake(self.mainRect.size.width, self.mainRect.origin.y, self.mainRect.size.width, self.mainRect.size.height);
+    self.musicLrcVC.view.frame = CGRectMake(self.mainRect.size.width*2, self.mainRect.origin.y, self.mainRect.size.width, self.mainRect.size.height);
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.mainRect];
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    self.tableView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    self.tableView.backgroundColor = RGBAlpha(255, 255, 255, 0.2);
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
+    self.coverImgView.userInteractionEnabled=YES;
+    
+    self.mainScrollView.contentSize = CGSizeMake(self.mainRect.size.width*3, self.mainRect.size.height);
+    self.mainScrollView.backgroundColor = [UIColor clearColor];
+    self.mainScrollView.contentOffset = CGPointZero;
+    
+    [self.mainScrollView addSubview:self.tableView];
+    [self.mainScrollView addSubview:self.musicMemoVC.view];
+    [self.mainScrollView addSubview:self.musicLrcVC.view];
 }
 
 #pragma mark - property
@@ -124,6 +139,13 @@
                               @"格式", self.viewModel.musicBeanModel.m_musicType];
     
     [self.musicMemoVC setMusicInfo:strMusicInfo];
+}
+
+#pragma mark - Methods
+- (void)clearCBLPLMusic {
+    
+    [self.viewModel clearCBLPLMusic];
+    [self.tableView reloadData];
 }
 
 #pragma mark - LDMusicBoxVMDelegate
@@ -231,6 +253,12 @@
 
 
 #pragma mark - UIButton
+
+- (void)clickRightItem:(UIBarButtonItem *)item {
+    
+    LDMusicEQVC *vc = [[LDMusicEQVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (IBAction)clickLoopBtn:(UIButton *)sender {
     [self.viewModel playLoopChanged];

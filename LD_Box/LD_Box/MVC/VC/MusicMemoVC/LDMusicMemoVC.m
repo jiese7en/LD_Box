@@ -9,6 +9,7 @@
 #import "LDMusicMemoVC.h"
 #import "UIFont+LDFont.h"
 #import "NSString+LDCategory.h"
+#import "UIColor+LDColor.h"
 
 @interface LDMusicMemoVC ()
 
@@ -20,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = RGBAlpha(255, 255, 255, 0.3);
 }
 
 #pragma mark - Methods

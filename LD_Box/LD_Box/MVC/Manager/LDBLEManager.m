@@ -57,6 +57,16 @@
     self.musicManager = [self.bluzManager getMusicManager:delegate];
 }
 
+- (void)creatAuxManager:(id <AuxDelegate>)delegate {
+    self.auxManager = [self.bluzManager getAuxManager:delegate];
+}
 
+- (void)creatAlarmManager:(id <AlarmDelegate>)delegate {
+    self.alarmManager = [self.bluzManager getAlarmManager:delegate];
+}
+
+- (void)creatRadioManager:(id <RadioDelegate>)delegate {
+    self.radioManager = [self.bluzManager getRadioManager:delegate];
+}
 
 @end

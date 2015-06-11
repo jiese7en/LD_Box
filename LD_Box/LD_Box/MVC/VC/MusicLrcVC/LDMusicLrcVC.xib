@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LDMusicLrcVC">
             <connections>
-                <outlet property="musicMemoTable" destination="OAP-Yz-MfQ" id="nkz-u4-P5F"/>
+                <outlet property="lrcTableView" destination="OAP-Yz-MfQ" id="T8Q-8O-cCN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -57,7 +57,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [BLE_MANGER creatMusicManager:self];
+        
         self.isPListChanged = YES;
         self.isLoadAllEnd = YES;
     }
@@ -356,6 +356,12 @@
 
 #pragma mark - Methods
 
+- (void)start {
+    [BLE_MANGER creatMusicManager:self];
+    
+    [self createMusicTimer];
+}
+
 - (void)selectPlayMusic:(UInt32)index {
     
     self.selectedRow = index;
@@ -407,7 +413,11 @@
     [BLE_MANGER.musicManager previous];
 }
 
-
+- (void)clearCBLPLMusic {
+    self.seq = -1;
+    [self.CBLPLMusicArr removeAllObjects];
+    self.isManagerReady = NO;
+}
 #pragma mark - MusicDelegate
 //对象准备就绪
 -(void)managerReady:(UInt32)mode {

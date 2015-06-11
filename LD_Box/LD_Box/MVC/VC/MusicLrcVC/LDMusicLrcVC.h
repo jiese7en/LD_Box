@@ -10,7 +10,7 @@
 
 @interface LDMusicLrcVC : LDBaseVC
 
-@property (weak, nonatomic) IBOutlet UITableView *musicMemoTable;
+@property (weak, nonatomic) IBOutlet UITableView *lrcTableView;
 
 @property (strong, nonatomic) NSMutableArray *itemListArr;
 

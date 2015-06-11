@@ -37,4 +37,8 @@
 - (IBAction)clickNextBtn:(UIButton *)sender;
 - (IBAction)clickPrevBtn:(UIButton *)sender;
 
+#pragma mark - Methods
+
+- (void)clearCBLPLMusic;
+
 @end

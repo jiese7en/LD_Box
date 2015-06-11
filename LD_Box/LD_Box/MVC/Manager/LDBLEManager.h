@@ -27,8 +27,20 @@
 
 @property (strong, nonatomic) id <MusicManager> musicManager;
 
+@property (strong, nonatomic) id <AuxManager> auxManager;
+
+@property (strong, nonatomic) id <AlarmManager> alarmManager;
+
+@property (strong, nonatomic) id <RadioManager> radioManager;
+
 - (void)creatGlobalManager:(id <GlobalDelegate>)delegate;
 
 - (void)creatMusicManager:(id <MusicDelegate>)delegate;
+
+- (void)creatAuxManager:(id <AuxDelegate>)delegate;
+
+- (void)creatAlarmManager:(id <AlarmDelegate>)delegate;
+
+- (void)creatRadioManager:(id <RadioDelegate>)delegate;
 
 @end

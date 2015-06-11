@@ -25,6 +25,17 @@
 		696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */; };
 		696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */; };
 		697342121B14CBC300D46B15 /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 697342111B14CBC300D46B15 /* LDMedia.m */; };
+		697E2A8E1B29F29600D42A8D /* LDLineinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A8C1B29F29600D42A8D /* LDLineinVC.m */; };
+		697E2A8F1B29F29600D42A8D /* LDLineinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */; };
+		697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A911B29F37100D42A8D /* LDLineinVM.m */; };
+		697E2A971B29F8A200D42A8D /* LDAlarmListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A951B29F8A200D42A8D /* LDAlarmListVC.m */; };
+		697E2A981B29F8A200D42A8D /* LDAlarmListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2A961B29F8A200D42A8D /* LDAlarmListVC.xib */; };
+		697E2A9B1B29F96300D42A8D /* LDAlarmListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A9A1B29F96300D42A8D /* LDAlarmListVM.m */; };
+		697E2AA01B29FDC200D42A8D /* LDAddAlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A9E1B29FDC200D42A8D /* LDAddAlarmVC.m */; };
+		697E2AA11B29FDC200D42A8D /* LDAddAlarmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2A9F1B29FDC200D42A8D /* LDAddAlarmVC.xib */; };
+		697E2AA61B29FF8000D42A8D /* LDFMRadioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2AA41B29FF8000D42A8D /* LDFMRadioVC.m */; };
+		697E2AA71B29FF8000D42A8D /* LDFMRadioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2AA51B29FF8000D42A8D /* LDFMRadioVC.xib */; };
+		697E2AAA1B29FFB700D42A8D /* LDFMRadioVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */; };
 		698271371B24A67400E586DB /* NSString+LDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 698271361B24A67400E586DB /* NSString+LDCategory.m */; };
 		6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713A1B24AABD00E586DB /* LDBLEManager.m */; };
 		698271401B24B22900E586DB /* LDMusicBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713E1B24B22900E586DB /* LDMusicBoxVC.m */; };
@@ -116,6 +127,24 @@
 		696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBluzDeviceModel.m; sourceTree = "<group>"; };
 		697342101B14CBC300D46B15 /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
 		697342111B14CBC300D46B15 /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
+		697E2A8B1B29F29600D42A8D /* LDLineinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLineinVC.h; sourceTree = "<group>"; };
+		697E2A8C1B29F29600D42A8D /* LDLineinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLineinVC.m; sourceTree = "<group>"; };
+		697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDLineinVC.xib; sourceTree = "<group>"; };
+		697E2A901B29F37100D42A8D /* LDLineinVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLineinVM.h; sourceTree = "<group>"; };
+		697E2A911B29F37100D42A8D /* LDLineinVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLineinVM.m; sourceTree = "<group>"; };
+		697E2A941B29F8A200D42A8D /* LDAlarmListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAlarmListVC.h; sourceTree = "<group>"; };
+		697E2A951B29F8A200D42A8D /* LDAlarmListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAlarmListVC.m; sourceTree = "<group>"; };
+		697E2A961B29F8A200D42A8D /* LDAlarmListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDAlarmListVC.xib; sourceTree = "<group>"; };
+		697E2A991B29F96300D42A8D /* LDAlarmListVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAlarmListVM.h; sourceTree = "<group>"; };
+		697E2A9A1B29F96300D42A8D /* LDAlarmListVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAlarmListVM.m; sourceTree = "<group>"; };
+		697E2A9D1B29FDC200D42A8D /* LDAddAlarmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAddAlarmVC.h; sourceTree = "<group>"; };
+		697E2A9E1B29FDC200D42A8D /* LDAddAlarmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAddAlarmVC.m; sourceTree = "<group>"; };
+		697E2A9F1B29FDC200D42A8D /* LDAddAlarmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDAddAlarmVC.xib; sourceTree = "<group>"; };
+		697E2AA31B29FF8000D42A8D /* LDFMRadioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDFMRadioVC.h; sourceTree = "<group>"; };
+		697E2AA41B29FF8000D42A8D /* LDFMRadioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDFMRadioVC.m; sourceTree = "<group>"; };
+		697E2AA51B29FF8000D42A8D /* LDFMRadioVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDFMRadioVC.xib; sourceTree = "<group>"; };
+		697E2AA81B29FFB700D42A8D /* LDFMRadioVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDFMRadioVM.h; sourceTree = "<group>"; };
+		697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDFMRadioVM.m; sourceTree = "<group>"; };
 		698271351B24A67400E586DB /* NSString+LDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LDCategory.h"; sourceTree = "<group>"; };
 		698271361B24A67400E586DB /* NSString+LDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LDCategory.m"; sourceTree = "<group>"; };
 		698271391B24AABD00E586DB /* LDBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEManager.h; sourceTree = "<group>"; };
@@ -395,14 +424,18 @@
 		690F98EB1B0E261A00C39BC5 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				697E2A9C1B29FD9900D42A8D /* AddAlarmVC */,
+				697E2A931B29F88200D42A8D /* AlarmVC */,
+				696BA57A1B1DDE3000B04259 /* BLEConnectVC */,
+				697E2AA21B29FF5A00D42A8D /* FMRadioVC */,
+				69F3463D1B18569200F8D69C /* LeftMenuVC */,
+				697E2A8A1B29F26100D42A8D /* LineinVC */,
+				690F98F91B0E2E3800C39BC5 /* MainVC */,
+				6982713C1B24B19F00E586DB /* MusicBoxVC */,
+				699810FF1B255AE70066B7C3 /* MusicEQVC */,
 				699FEE911B25CB160018F141 /* MusicLrcVC */,
 				699FEE901B25CAF20018F141 /* MusicMemoVC */,
-				699810FF1B255AE70066B7C3 /* MusicEQVC */,
-				6982713C1B24B19F00E586DB /* MusicBoxVC */,
-				696BA57A1B1DDE3000B04259 /* BLEConnectVC */,
-				69F3463D1B18569200F8D69C /* LeftMenuVC */,
 				691452591B1207DC009892FA /* MusicVC */,
-				690F98F91B0E2E3800C39BC5 /* MainVC */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -529,6 +562,52 @@
 				697342111B14CBC300D46B15 /* LDMedia.m */,
 			);
 			path = LDMedia;
+			sourceTree = "<group>";
+		};
+		697E2A8A1B29F26100D42A8D /* LineinVC */ = {
+			isa = PBXGroup;
+			children = (
+				697E2A8B1B29F29600D42A8D /* LDLineinVC.h */,
+				697E2A8C1B29F29600D42A8D /* LDLineinVC.m */,
+				697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */,
+				697E2A901B29F37100D42A8D /* LDLineinVM.h */,
+				697E2A911B29F37100D42A8D /* LDLineinVM.m */,
+			);
+			path = LineinVC;
+			sourceTree = "<group>";
+		};
+		697E2A931B29F88200D42A8D /* AlarmVC */ = {
+			isa = PBXGroup;
+			children = (
+				697E2A941B29F8A200D42A8D /* LDAlarmListVC.h */,
+				697E2A951B29F8A200D42A8D /* LDAlarmListVC.m */,
+				697E2A961B29F8A200D42A8D /* LDAlarmListVC.xib */,
+				697E2A991B29F96300D42A8D /* LDAlarmListVM.h */,
+				697E2A9A1B29F96300D42A8D /* LDAlarmListVM.m */,
+			);
+			path = AlarmVC;
+			sourceTree = "<group>";
+		};
+		697E2A9C1B29FD9900D42A8D /* AddAlarmVC */ = {
+			isa = PBXGroup;
+			children = (
+				697E2A9D1B29FDC200D42A8D /* LDAddAlarmVC.h */,
+				697E2A9E1B29FDC200D42A8D /* LDAddAlarmVC.m */,
+				697E2A9F1B29FDC200D42A8D /* LDAddAlarmVC.xib */,
+			);
+			path = AddAlarmVC;
+			sourceTree = "<group>";
+		};
+		697E2AA21B29FF5A00D42A8D /* FMRadioVC */ = {
+			isa = PBXGroup;
+			children = (
+				697E2AA31B29FF8000D42A8D /* LDFMRadioVC.h */,
+				697E2AA41B29FF8000D42A8D /* LDFMRadioVC.m */,
+				697E2AA51B29FF8000D42A8D /* LDFMRadioVC.xib */,
+				697E2AA81B29FFB700D42A8D /* LDFMRadioVM.h */,
+				697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */,
+			);
+			path = FMRadioVC;
 			sourceTree = "<group>";
 		};
 		697FB9351B143016009833DD /* Category */ = {
@@ -725,12 +804,16 @@
 			files = (
 				690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */,
 				690F98DC1B0E1F5E00C39BC5 /* Main.storyboard in Resources */,
+				697E2AA11B29FDC200D42A8D /* LDAddAlarmVC.xib in Resources */,
+				697E2A981B29F8A200D42A8D /* LDAlarmListVC.xib in Resources */,
 				699811031B255B290066B7C3 /* LDMusicEQVC.xib in Resources */,
+				697E2A8F1B29F29600D42A8D /* LDLineinVC.xib in Resources */,
 				69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */,
 				699FEE8A1B25CAE40018F141 /* LDMusicLrcVC.xib in Resources */,
 				699FEE8F1B25CAEE0018F141 /* LDMusicMemoVC.xib in Resources */,
 				696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */,
 				698271411B24B22900E586DB /* LDMusicBoxVC.xib in Resources */,
+				697E2AA71B29FF8000D42A8D /* LDFMRadioVC.xib in Resources */,
 				690F98DB1B0E1F5E00C39BC5 /* LaunchScreen.xib in Resources */,
 				696BA57F1B1DDEA500B04259 /* LDBLEConnectVC.xib in Resources */,
 				69F346521B18674200F8D69C /* LDMainVC.xib in Resources */,
@@ -784,11 +867,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697E2AA61B29FF8000D42A8D /* LDFMRadioVC.m in Sources */,
+				697E2A9B1B29F96300D42A8D /* LDAlarmListVM.m in Sources */,
 				699FEE8E1B25CAEE0018F141 /* LDMusicMemoVC.m in Sources */,
 				699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */,
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
 				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
 				6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */,
+				697E2AA01B29FDC200D42A8D /* LDAddAlarmVC.m in Sources */,
 				698271371B24A67400E586DB /* NSString+LDCategory.m in Sources */,
 				699811041B255B290066B7C3 /* LDMusicEQVC.m in Sources */,
 				696A76A01B209293001867C7 /* LDMusicVC.m in Sources */,
@@ -807,6 +893,8 @@
 				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
 				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
+				697E2A8E1B29F29600D42A8D /* LDLineinVC.m in Sources */,
+				697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */,
 				699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */,
 				69F763371B28A60900C89F6F /* NSArray+LDCategory.m in Sources */,
 				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
@@ -814,7 +902,9 @@
 				699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
 				696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */,
+				697E2A971B29F8A200D42A8D /* LDAlarmListVC.m in Sources */,
 				696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */,
+				697E2AAA1B29FFB700D42A8D /* LDFMRadioVM.m in Sources */,
 				69F763341B289CEA00C89F6F /* NSObject+LDUserDefaults.m in Sources */,
 				6914526F1B121532009892FA /* LDBaseButton.m in Sources */,
 			);

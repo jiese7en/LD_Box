@@ -16,8 +16,6 @@
 @property (nonatomic, strong) LDBLEConnectVM *viewModel;
 @property (weak, nonatomic) IBOutlet UITableView *deviceTableView;
 
-- (IBAction)refreshBtn:(UIButton *)sender;
-
 @end
 
 @implementation LDBLEConnectVC
@@ -51,6 +49,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self layoutTableView];
+    
+    [self layoutRightItem];
+}
+
+- (void)layoutTableView {
+    self.deviceTableView.tableFooterView = [[UIView alloc] init];
+}
+
+
+- (void)layoutRightItem {
+    
+    UIButton *refreshBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [refreshBtn setImage:[UIImage imageNamed:@"ic_menu_refresh"] forState:UIControlStateNormal];
+    [refreshBtn addTarget:self action:@selector(clickRefreshBtn:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:refreshBtn];
+    
+    
+    self.navigationItem.rightBarButtonItem = item;
 }
 
 #pragma mark - property
@@ -129,12 +146,9 @@
 
 #pragma mark - UIButton
 
-- (IBAction)refreshBtn:(UIButton *)sender {
+- (void)clickRefreshBtn:(UIButton *)sender {
     
     [SVProgressHUD showWithStatus:@"正在搜索设备"];
-    
-    
     [self.viewModel scanStart];
-    
 }
 @end

@@ -9,6 +9,7 @@
 #import "LDMusicLrcVC.h"
 #import "UIColor+LDColor.h"
 #import "UIFont+LDFont.h"
+#import "UIColor+LDColor.h"
 
 @interface LDMusicLrcVC () <UITableViewDataSource, UITableViewDelegate>
 
@@ -29,7 +30,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = RGBAlpha(255, 255, 255, 0.2);
     
+    [self layoutTableView];
+}
+
+- (void)layoutTableView {
+    
+    self.lrcTableView.backgroundColor = RGBAlpha(255, 255, 255, 0.2);
+    self.lrcTableView.tableFooterView = [[UIView alloc] init];
 }
 
 
@@ -38,11 +47,11 @@
 - (void)updateLrcTableView:(NSUInteger)lineNumber {
     //重新载入 歌词列表lrcTabView
     self.lrcInt = lineNumber;
-    [self.musicMemoTable reloadData];
+    [self.lrcTableView reloadData];
     
     //使被选中的行移到中间
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:lineNumber inSection:0];
-    [self.musicMemoTable selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    [self.lrcTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     
 }
 
@@ -50,7 +59,7 @@
 
 - (void)loadDataItemArr:(NSMutableArray *)itemListArr {
     self.itemListArr = itemListArr;
-    [self.musicMemoTable reloadData];
+    [self.lrcTableView reloadData];
 }
 
 - (void)displaySongWord:(NSInteger)time {

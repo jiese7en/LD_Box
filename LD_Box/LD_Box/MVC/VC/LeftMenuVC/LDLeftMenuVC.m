@@ -18,6 +18,9 @@
 #import "LDMusicVC.h"
 #import "LDMainVC.h"
 #import "LDMusicBoxVC.h"
+#import "LDLineinVC.h"
+#import "LDAlarmListVC.h"
+#import "LDFMRadioVC.h"
 
 @interface LDLeftMenuVC () <UITableViewDataSource, UITableViewDelegate>
 
@@ -44,7 +47,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self layoutTableView];
 }
+
+- (void)layoutTableView {
+    self.leftTableView.tableFooterView = [[UIView alloc] init];
+}
+
 
 #pragma mark - property
 
@@ -108,7 +117,22 @@
         [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
     }
     else if (indexPath.row == 3) {
-        LDMusicBoxVC *vc = [[LDMusicBoxVC alloc] initWithNibName:@"LDMusicBoxVC" bundle:[NSBundle mainBundle]];
+        LDMusicBoxVC *vc = [[LDMusicBoxVC alloc] init];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+    else if (indexPath.row == 5) {
+        LDFMRadioVC *vc = [[LDFMRadioVC alloc] init];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+    else if (indexPath.row == 6) {
+        LDAlarmListVC *vc = [[LDAlarmListVC alloc] init];
+        LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
+        [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
+    }
+    else if (indexPath.row == 7) {
+        LDLineinVC *vc = [[LDLineinVC alloc] init];
         LDBaseNC *nc = [[LDBaseNC alloc] initWithRootViewController:vc];
         [self.mm_drawerController setCenterViewController:nc withCloseAnimation:YES completion:^(BOOL finished) {}];
     }
