@@ -10,6 +10,7 @@
 #import "LDDevice.h"
 #import "LDMedia.h"
 #import "MJExtension.h"
+#import "NSString+LDCategory.h"
 
 //MediaPlayer
 #import <MediaPlayer/MPMediaQuery.h>
@@ -58,6 +59,9 @@
 - (IBAction)clickPlayMusicBtn:(UIButton *)sender;
 - (IBAction)clickPreMusicBtn:(UIButton *)sender;
 - (IBAction)clickNextMusicBtn:(UIButton *)sender;
+- (IBAction)slideValueChanged:(UISlider *)sender;
+- (IBAction)slideTouchCancel:(UISlider *)sender;
+- (IBAction)slideTouchDown:(UISlider *)sender;
 
 
 @end
@@ -139,10 +143,37 @@
 
 
 - (void)playProgress {
+    if (!self.audioPlayer) {
+        return ;
+    }
+    
+    CGFloat curTime = self.audioPlayer.currentTime;
+    self.playMusicSlide.value = curTime;
+    self.curMusicLabel.text = [NSString stringMinAndSecond:(UInt32)curTime];
+    
+//    [self showMPNowPlayingInfoCenter:curTime];
     
 }
 
 #pragma mark - Private Methods
+
+- (void)showMPNowPlayingInfoCenter:(CGFloat)curTime {
+    if (NSClassFromString(@"MPNowPlayingInfoCenter")) {
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+        
+        [dict setObject:self.titleMusicLabel.text forKey:MPMediaItemPropertyAlbumTitle];
+        [dict setObject:self.singerMusicLabel.text forKey:MPMediaItemPropertyArtist];
+        //音乐当前已经播放时间
+        [dict setObject:[NSNumber numberWithDouble:curTime] forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+        //进度条光标的速度
+        [dict setObject:[NSNumber numberWithFloat:1.0] forKey:MPNowPlayingInfoPropertyPlaybackRate];
+        //歌曲总时间设置
+        [dict setObject:[NSNumber numberWithDouble:self.totalMusicTime] forKey:MPMediaItemPropertyPlaybackDuration];
+        MPMediaItemArtwork *artwork = [[MPMediaItemArtwork alloc] initWithImage:self.curMusicImg];
+        [dict setObject:artwork forKey:MPMediaItemPropertyArtwork];
+        [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:dict];
+    }
+}
 
 - (void)AudioSessionSet {
     
@@ -183,15 +214,9 @@
     
     [self.playMusicBtn setImage:[UIImage imageNamed:@"ic_music_pause"] forState:UIControlStateNormal];
     
-    LDMusicBeanModel *mbModel = [[LDMusicBeanModel alloc] init];
-    mbModel = [self.musicArr objectAtIndex:self.selectMusicIndex];
-    self.titleMusicLabel.text = mbModel.m_musicName;
-    self.singerMusicLabel.text = mbModel.m_singerName;
-    self.totalMusicLabel.text = mbModel.m_musicTime;
-    self.curMusicLabel.text = @"00:00";
+    LDMusicBeanModel *mbModel = [self.musicArr objectAtIndex:self.selectMusicIndex];
+    [self layoutWithMusicBean:mbModel];
     
-    self.totalMusicTime = [mbModel getTotalTime];
-    self.curMusicImg = mbModel.m_musicCover;
     if(self.audioPlayer && !play) {
         [self.audioPlayer play];
     }
@@ -204,6 +229,18 @@
     }
     self.audioPlayer.delegate = self;
     self.isMusicPlay = YES;
+}
+
+- (void)layoutWithMusicBean:(LDMusicBeanModel *)mbModel {
+    
+    self.titleMusicLabel.text = mbModel.m_musicName;
+    self.singerMusicLabel.text = mbModel.m_singerName;
+    self.totalMusicLabel.text = mbModel.m_musicTime;
+    self.curMusicLabel.text = @"00:00";
+    
+    self.totalMusicTime = [mbModel getTotalTime];
+    self.curMusicImg = mbModel.m_musicCover;
+    
 }
 
 #pragma mark - Methods
@@ -240,8 +277,7 @@
     NSString *CellIdentifier = @"CellCollect";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell
-                 alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     LDMusicBeanModel *mbModel = [self.musicArr objectAtIndex:indexPath.row];
@@ -253,13 +289,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-
-    LDMusicBeanModel *mbModel = [self.musicArr objectAtIndex:indexPath.row];
-    
-    self.titleMusicLabel.text = mbModel.m_musicName;
-    self.singerMusicLabel.text = mbModel.m_singerName;
-    self.totalMusicLabel.text = mbModel.m_musicTime;
-    self.curMusicLabel.text = @"00:00";
+    self.selectMusicIndex = indexPath.row;
     
     [self playMusic:YES];
 }
@@ -274,13 +304,14 @@
             self.isMusicPlay = NO;
             [self.audioPlayer pause];
         }
-        else{
+        else {
             [self.playMusicBtn setImage:[UIImage imageNamed:@"ic_music_pause"] forState:UIControlStateNormal];
             self.isMusicPlay = YES;
             
             if (self.audioPlayer) {
                 [self.audioPlayer play];
-            } else {
+            }
+            else {
                 NSLog(@"Error initializing data for AVAudioPlayer.  Possibly an Unsupported Format");
             }
         }
@@ -288,11 +319,47 @@
 }
 
 - (IBAction)clickPreMusicBtn:(UIButton *)sender {
+    if (!self.musicArr.count) {
+        return ;
+    }
     
-    //doRefreshBtn
+    self.selectMusicIndex++;
+    
+    if(self.selectMusicIndex == self.musicArr.count) {
+        self.selectMusicIndex = 0;
+    }
+    
+    [self playMusic:YES];
     
 }
 
 - (IBAction)clickNextMusicBtn:(UIButton *)sender {
+    if (!self.musicArr.count) {
+        return ;
+    }
+    
+    self.selectMusicIndex--;
+    if(self.selectMusicIndex == -1) {
+        self.selectMusicIndex = self.musicArr.count - 1;
+    }
+
+    [self playMusic:YES];
+}
+
+- (IBAction)slideValueChanged:(UISlider *)sender {
+    
+    self.audioPlayer.currentTime = self.playMusicSlide.value;
+    
+    [self.musicTimer setFireDate:[NSDate date]];
+}
+
+- (IBAction)slideTouchCancel:(UISlider *)sender {
+    
+    [self.musicTimer setFireDate:[NSDate date]];
+}
+
+- (IBAction)slideTouchDown:(UISlider *)sender {
+    
+    [self.musicTimer setFireDate:[NSDate distantFuture]];
 }
 @end

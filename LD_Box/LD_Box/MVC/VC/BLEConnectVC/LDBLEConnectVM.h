@@ -17,6 +17,10 @@
 
 - (void)connectedPeripheralFinished;
 
+- (void)disconnectedPeripheralFinished;
+
+- (void)disconnectedPeripheralFinished:(BOOL)onInitiative;
+
 @end
 
 @interface LDBLEConnectVM : NSObject

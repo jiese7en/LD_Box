@@ -144,6 +144,15 @@
     
 }
 
+- (void)disconnectedPeripheralFinished {
+    [SVProgressHUD dismiss];
+}
+
+- (void)disconnectedPeripheralFinished:(BOOL)onInitiative {
+    [SVProgressHUD dismiss];
+}
+
+
 #pragma mark - UIButton
 
 - (void)clickRefreshBtn:(UIButton *)sender {

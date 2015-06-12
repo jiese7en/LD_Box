@@ -16,6 +16,12 @@
 		690F98DF1B0E1FD400C39BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690F98DE1B0E1FD400C39BC5 /* Images.xcassets */; };
 		6914526F1B121532009892FA /* LDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6914526E1B121532009892FA /* LDBaseButton.m */; };
 		691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 691452721B121C65009892FA /* LDMusicBeanModel.m */; };
+		69484D421B2A76AA00E87B43 /* NSObject+LDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D411B2A76AA00E87B43 /* NSObject+LDNotification.m */; };
+		69484D471B2A8A7C00E87B43 /* LDBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D461B2A8A7C00E87B43 /* LDBLEManager.m */; };
+		69484D4D1B2A8A8400E87B43 /* LDDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D4A1B2A8A8400E87B43 /* LDDrawer.m */; };
+		69484D4E1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D4C1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.m */; };
+		69484D521B2A8A8C00E87B43 /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D511B2A8A8C00E87B43 /* LDMedia.m */; };
+		69484D561B2A8B1200E87B43 /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 69484D551B2A8B1200E87B43 /* LDLoger.m */; };
 		696A76A01B209293001867C7 /* LDMusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A769E1B209293001867C7 /* LDMusicVC.m */; };
 		696A76A11B209293001867C7 /* LDMusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696A769F1B209293001867C7 /* LDMusicVC.xib */; };
 		696BA5791B1DDACA00B04259 /* LDLeftMenuVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5781B1DDACA00B04259 /* LDLeftMenuVM.m */; };
@@ -24,7 +30,6 @@
 		696BA5911B1DE32700B04259 /* libiBluz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696BA5901B1DE32700B04259 /* libiBluz.a */; };
 		696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */; };
 		696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */; };
-		697342121B14CBC300D46B15 /* LDMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 697342111B14CBC300D46B15 /* LDMedia.m */; };
 		697E2A8E1B29F29600D42A8D /* LDLineinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A8C1B29F29600D42A8D /* LDLineinVC.m */; };
 		697E2A8F1B29F29600D42A8D /* LDLineinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */; };
 		697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A911B29F37100D42A8D /* LDLineinVM.m */; };
@@ -37,10 +42,8 @@
 		697E2AA71B29FF8000D42A8D /* LDFMRadioVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2AA51B29FF8000D42A8D /* LDFMRadioVC.xib */; };
 		697E2AAA1B29FFB700D42A8D /* LDFMRadioVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */; };
 		698271371B24A67400E586DB /* NSString+LDCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 698271361B24A67400E586DB /* NSString+LDCategory.m */; };
-		6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713A1B24AABD00E586DB /* LDBLEManager.m */; };
 		698271401B24B22900E586DB /* LDMusicBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6982713E1B24B22900E586DB /* LDMusicBoxVC.m */; };
 		698271411B24B22900E586DB /* LDMusicBoxVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6982713F1B24B22900E586DB /* LDMusicBoxVC.xib */; };
-		698431881B0F63FC00D7263B /* LDLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 698431871B0F63FC00D7263B /* LDLoger.m */; };
 		6984318B1B0F640300D7263B /* LDAVAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318A1B0F640300D7263B /* LDAVAudioManager.m */; };
 		6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6984318D1B0F66B600D7263B /* UIColor+LDColor.m */; };
 		699810FE1B254A620066B7C3 /* UIFont+LDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 699810FD1B254A620066B7C3 /* UIFont+LDFont.m */; };
@@ -55,9 +58,7 @@
 		69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346311B1849AE00F8D69C /* MLNavigationController.m */; };
 		69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346341B184D9C00F8D69C /* LDBaseNC.m */; };
 		69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346371B184E6A00F8D69C /* LDBaseVC.m */; };
-		69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3463B1B18560000F8D69C /* LDDrawer.m */; };
 		69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346441B18593A00F8D69C /* LDDrawerVC.m */; };
-		69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */; };
 		69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */; };
 		69F3464D1B18663200F8D69C /* LDLeftMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */; };
 		69F346511B18674200F8D69C /* LDMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F3464F1B18674200F8D69C /* LDMainVC.m */; };
@@ -98,6 +99,19 @@
 		6914526E1B121532009892FA /* LDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseButton.m; sourceTree = "<group>"; };
 		691452711B121C65009892FA /* LDMusicBeanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBeanModel.h; sourceTree = "<group>"; };
 		691452721B121C65009892FA /* LDMusicBeanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBeanModel.m; sourceTree = "<group>"; };
+		69484D401B2A76AA00E87B43 /* NSObject+LDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LDNotification.h"; sourceTree = "<group>"; };
+		69484D411B2A76AA00E87B43 /* NSObject+LDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LDNotification.m"; sourceTree = "<group>"; };
+		69484D431B2A87B200E87B43 /* LDNotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDNotificationName.h; sourceTree = "<group>"; };
+		69484D451B2A8A7C00E87B43 /* LDBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEManager.h; sourceTree = "<group>"; };
+		69484D461B2A8A7C00E87B43 /* LDBLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEManager.m; sourceTree = "<group>"; };
+		69484D491B2A8A8400E87B43 /* LDDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDrawer.h; sourceTree = "<group>"; };
+		69484D4A1B2A8A8400E87B43 /* LDDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDrawer.m; sourceTree = "<group>"; };
+		69484D4B1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		69484D4C1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		69484D501B2A8A8C00E87B43 /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
+		69484D511B2A8A8C00E87B43 /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
+		69484D541B2A8B1200E87B43 /* LDLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoger.h; sourceTree = "<group>"; };
+		69484D551B2A8B1200E87B43 /* LDLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLoger.m; sourceTree = "<group>"; };
 		696A769D1B209293001867C7 /* LDMusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicVC.h; sourceTree = "<group>"; };
 		696A769E1B209293001867C7 /* LDMusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicVC.m; sourceTree = "<group>"; };
 		696A769F1B209293001867C7 /* LDMusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicVC.xib; sourceTree = "<group>"; };
@@ -125,8 +139,6 @@
 		696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEConnectVM.m; sourceTree = "<group>"; };
 		696BA5951B1DE88D00B04259 /* LDBluzDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBluzDeviceModel.h; sourceTree = "<group>"; };
 		696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBluzDeviceModel.m; sourceTree = "<group>"; };
-		697342101B14CBC300D46B15 /* LDMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMedia.h; sourceTree = "<group>"; };
-		697342111B14CBC300D46B15 /* LDMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMedia.m; sourceTree = "<group>"; };
 		697E2A8B1B29F29600D42A8D /* LDLineinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLineinVC.h; sourceTree = "<group>"; };
 		697E2A8C1B29F29600D42A8D /* LDLineinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLineinVC.m; sourceTree = "<group>"; };
 		697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDLineinVC.xib; sourceTree = "<group>"; };
@@ -147,13 +159,9 @@
 		697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDFMRadioVM.m; sourceTree = "<group>"; };
 		698271351B24A67400E586DB /* NSString+LDCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LDCategory.h"; sourceTree = "<group>"; };
 		698271361B24A67400E586DB /* NSString+LDCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LDCategory.m"; sourceTree = "<group>"; };
-		698271391B24AABD00E586DB /* LDBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBLEManager.h; sourceTree = "<group>"; };
-		6982713A1B24AABD00E586DB /* LDBLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEManager.m; sourceTree = "<group>"; };
 		6982713D1B24B22900E586DB /* LDMusicBoxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMusicBoxVC.h; sourceTree = "<group>"; };
 		6982713E1B24B22900E586DB /* LDMusicBoxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMusicBoxVC.m; sourceTree = "<group>"; };
 		6982713F1B24B22900E586DB /* LDMusicBoxVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDMusicBoxVC.xib; sourceTree = "<group>"; };
-		698431861B0F63FC00D7263B /* LDLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLoger.h; sourceTree = "<group>"; };
-		698431871B0F63FC00D7263B /* LDLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLoger.m; sourceTree = "<group>"; };
 		698431891B0F640300D7263B /* LDAVAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAVAudioManager.h; sourceTree = "<group>"; };
 		6984318A1B0F640300D7263B /* LDAVAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAVAudioManager.m; sourceTree = "<group>"; };
 		6984318C1B0F66B600D7263B /* UIColor+LDColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LDColor.h"; sourceTree = "<group>"; };
@@ -179,12 +187,8 @@
 		69F346341B184D9C00F8D69C /* LDBaseNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseNC.m; sourceTree = "<group>"; };
 		69F346361B184E6A00F8D69C /* LDBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBaseVC.h; sourceTree = "<group>"; };
 		69F346371B184E6A00F8D69C /* LDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBaseVC.m; sourceTree = "<group>"; };
-		69F3463A1B18560000F8D69C /* LDDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDrawer.h; sourceTree = "<group>"; };
-		69F3463B1B18560000F8D69C /* LDDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDrawer.m; sourceTree = "<group>"; };
 		69F346431B18593A00F8D69C /* LDDrawerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDrawerVC.h; sourceTree = "<group>"; };
 		69F346441B18593A00F8D69C /* LDDrawerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDrawerVC.m; sourceTree = "<group>"; };
-		69F346461B185F2400F8D69C /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
-		69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		69F346491B18663200F8D69C /* LDLeftMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLeftMenuVC.h; sourceTree = "<group>"; };
 		69F3464A1B18663200F8D69C /* LDLeftMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLeftMenuVC.m; sourceTree = "<group>"; };
 		69F3464B1B18663200F8D69C /* LDLeftMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDLeftMenuVC.xib; sourceTree = "<group>"; };
@@ -337,6 +341,8 @@
 				699810FD1B254A620066B7C3 /* UIFont+LDFont.m */,
 				69F763321B289CEA00C89F6F /* NSObject+LDUserDefaults.h */,
 				69F763331B289CEA00C89F6F /* NSObject+LDUserDefaults.m */,
+				69484D401B2A76AA00E87B43 /* NSObject+LDNotification.h */,
+				69484D411B2A76AA00E87B43 /* NSObject+LDNotification.m */,
 				69F763351B28A60900C89F6F /* NSArray+LDCategory.h */,
 				69F763361B28A60900C89F6F /* NSArray+LDCategory.m */,
 			);
@@ -370,9 +376,12 @@
 		690F98E51B0E23FE00C39BC5 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				691452651B120F1F009892FA /* LDDefine */,
-				690F98F31B0E294B00C39BC5 /* NSLog */,
 				690F98EF1B0E28D300C39BC5 /* AVAudio */,
+				69484D441B2A8A7C00E87B43 /* BLEManager */,
+				69484D481B2A8A8400E87B43 /* Drawer */,
+				691452651B120F1F009892FA /* LDDefine */,
+				69484D531B2A8B1200E87B43 /* LDLog */,
+				69484D4F1B2A8A8C00E87B43 /* LDMedia */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -380,8 +389,6 @@
 		690F98E61B0E24E000C39BC5 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				698271381B24AA5700E586DB /* Manager */,
-				690F98F81B0E2CD500C39BC5 /* LD_VC_Lib */,
 				690F98F71B0E2C6F00C39BC5 /* BaseVC */,
 				690F98EB1B0E261A00C39BC5 /* VC */,
 				690F98E71B0E251600C39BC5 /* Model */,
@@ -449,29 +456,11 @@
 			path = AVAudio;
 			sourceTree = "<group>";
 		};
-		690F98F31B0E294B00C39BC5 /* NSLog */ = {
-			isa = PBXGroup;
-			children = (
-				698431861B0F63FC00D7263B /* LDLoger.h */,
-				698431871B0F63FC00D7263B /* LDLoger.m */,
-			);
-			path = NSLog;
-			sourceTree = "<group>";
-		};
 		690F98F71B0E2C6F00C39BC5 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = BaseVC;
-			sourceTree = "<group>";
-		};
-		690F98F81B0E2CD500C39BC5 /* LD_VC_Lib */ = {
-			isa = PBXGroup;
-			children = (
-				697FB9361B1431C0009833DD /* LD_VC_Uint */,
-				697FB9351B143016009833DD /* Category */,
-			);
-			path = LD_VC_Lib;
 			sourceTree = "<group>";
 		};
 		690F98F91B0E2E3800C39BC5 /* MainVC */ = {
@@ -498,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				6914526C1B12106D009892FA /* LDDevice.h */,
+				69484D431B2A87B200E87B43 /* LDNotificationName.h */,
 			);
 			path = LDDefine;
 			sourceTree = "<group>";
@@ -511,6 +501,44 @@
 				696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */,
 			);
 			path = CommonModel;
+			sourceTree = "<group>";
+		};
+		69484D441B2A8A7C00E87B43 /* BLEManager */ = {
+			isa = PBXGroup;
+			children = (
+				69484D451B2A8A7C00E87B43 /* LDBLEManager.h */,
+				69484D461B2A8A7C00E87B43 /* LDBLEManager.m */,
+			);
+			path = BLEManager;
+			sourceTree = "<group>";
+		};
+		69484D481B2A8A8400E87B43 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				69484D491B2A8A8400E87B43 /* LDDrawer.h */,
+				69484D4A1B2A8A8400E87B43 /* LDDrawer.m */,
+				69484D4B1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.h */,
+				69484D4C1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.m */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		69484D4F1B2A8A8C00E87B43 /* LDMedia */ = {
+			isa = PBXGroup;
+			children = (
+				69484D501B2A8A8C00E87B43 /* LDMedia.h */,
+				69484D511B2A8A8C00E87B43 /* LDMedia.m */,
+			);
+			path = LDMedia;
+			sourceTree = "<group>";
+		};
+		69484D531B2A8B1200E87B43 /* LDLog */ = {
+			isa = PBXGroup;
+			children = (
+				69484D541B2A8B1200E87B43 /* LDLoger.h */,
+				69484D551B2A8B1200E87B43 /* LDLoger.m */,
+			);
+			path = LDLog;
 			sourceTree = "<group>";
 		};
 		696BA57A1B1DDE3000B04259 /* BLEConnectVC */ = {
@@ -553,15 +581,6 @@
 				696BA58F1B1DE32700B04259 /* RingEntry.h */,
 			);
 			path = include;
-			sourceTree = "<group>";
-		};
-		6973420F1B14CB9700D46B15 /* LDMedia */ = {
-			isa = PBXGroup;
-			children = (
-				697342101B14CBC300D46B15 /* LDMedia.h */,
-				697342111B14CBC300D46B15 /* LDMedia.m */,
-			);
-			path = LDMedia;
 			sourceTree = "<group>";
 		};
 		697E2A8A1B29F26100D42A8D /* LineinVC */ = {
@@ -608,31 +627,6 @@
 				697E2AA91B29FFB700D42A8D /* LDFMRadioVM.m */,
 			);
 			path = FMRadioVC;
-			sourceTree = "<group>";
-		};
-		697FB9351B143016009833DD /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		697FB9361B1431C0009833DD /* LD_VC_Uint */ = {
-			isa = PBXGroup;
-			children = (
-				69F346391B18559700F8D69C /* Drawer */,
-				6973420F1B14CB9700D46B15 /* LDMedia */,
-			);
-			path = LD_VC_Uint;
-			sourceTree = "<group>";
-		};
-		698271381B24AA5700E586DB /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				698271391B24AABD00E586DB /* LDBLEManager.h */,
-				6982713A1B24AABD00E586DB /* LDBLEManager.m */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		6982713C1B24B19F00E586DB /* MusicBoxVC */ = {
@@ -686,17 +680,6 @@
 				69F346311B1849AE00F8D69C /* MLNavigationController.m */,
 			);
 			path = MLNavigationController;
-			sourceTree = "<group>";
-		};
-		69F346391B18559700F8D69C /* Drawer */ = {
-			isa = PBXGroup;
-			children = (
-				69F3463A1B18560000F8D69C /* LDDrawer.h */,
-				69F3463B1B18560000F8D69C /* LDDrawer.m */,
-				69F346461B185F2400F8D69C /* MMExampleDrawerVisualStateManager.h */,
-				69F346471B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m */,
-			);
-			path = Drawer;
 			sourceTree = "<group>";
 		};
 		69F3463D1B18569200F8D69C /* LeftMenuVC */ = {
@@ -872,16 +855,14 @@
 				699FEE8E1B25CAEE0018F141 /* LDMusicMemoVC.m in Sources */,
 				699811071B255C2D0066B7C3 /* LDMusicEQVM.m in Sources */,
 				690F98B51B0E15DC00C39BC5 /* ViewController.m in Sources */,
-				69F346481B185F2400F8D69C /* MMExampleDrawerVisualStateManager.m in Sources */,
-				6982713B1B24AABD00E586DB /* LDBLEManager.m in Sources */,
 				697E2AA01B29FDC200D42A8D /* LDAddAlarmVC.m in Sources */,
 				698271371B24A67400E586DB /* NSString+LDCategory.m in Sources */,
 				699811041B255B290066B7C3 /* LDMusicEQVC.m in Sources */,
 				696A76A01B209293001867C7 /* LDMusicVC.m in Sources */,
-				698431881B0F63FC00D7263B /* LDLoger.m in Sources */,
+				69484D4E1B2A8A8400E87B43 /* MMExampleDrawerVisualStateManager.m in Sources */,
 				690F98B21B0E15DC00C39BC5 /* AppDelegate.m in Sources */,
 				6984318E1B0F66B600D7263B /* UIColor+LDColor.m in Sources */,
-				697342121B14CBC300D46B15 /* LDMedia.m in Sources */,
+				69484D4D1B2A8A8400E87B43 /* LDDrawer.m in Sources */,
 				691452731B121C65009892FA /* LDMusicBeanModel.m in Sources */,
 				69F346351B184D9C00F8D69C /* LDBaseNC.m in Sources */,
 				698271401B24B22900E586DB /* LDMusicBoxVC.m in Sources */,
@@ -890,21 +871,24 @@
 				69F346321B1849AE00F8D69C /* MLNavigationController.m in Sources */,
 				699810FE1B254A620066B7C3 /* UIFont+LDFont.m in Sources */,
 				69F3464C1B18663200F8D69C /* LDLeftMenuVC.m in Sources */,
+				69484D421B2A76AA00E87B43 /* NSObject+LDNotification.m in Sources */,
 				696BA57E1B1DDEA500B04259 /* LDBLEConnectVC.m in Sources */,
+				69484D561B2A8B1200E87B43 /* LDLoger.m in Sources */,
 				69F346451B18593A00F8D69C /* LDDrawerVC.m in Sources */,
 				69F346381B184E6A00F8D69C /* LDBaseVC.m in Sources */,
 				697E2A8E1B29F29600D42A8D /* LDLineinVC.m in Sources */,
 				697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */,
 				699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */,
 				69F763371B28A60900C89F6F /* NSArray+LDCategory.m in Sources */,
-				69F3463C1B18560000F8D69C /* LDDrawer.m in Sources */,
 				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
 				699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,
 				696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */,
+				69484D521B2A8A8C00E87B43 /* LDMedia.m in Sources */,
 				697E2A971B29F8A200D42A8D /* LDAlarmListVC.m in Sources */,
 				696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */,
 				697E2AAA1B29FFB700D42A8D /* LDFMRadioVM.m in Sources */,
+				69484D471B2A8A7C00E87B43 /* LDBLEManager.m in Sources */,
 				69F763341B289CEA00C89F6F /* NSObject+LDUserDefaults.m in Sources */,
 				6914526F1B121532009892FA /* LDBaseButton.m in Sources */,
 			);

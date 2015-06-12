@@ -69,6 +69,11 @@
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="gcu-9n-AbO">
                     <rect key="frame" x="69" y="471" width="190" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <action selector="slideTouchCancel:" destination="-1" eventType="touchCancel" id="JnQ-dY-sPY"/>
+                        <action selector="slideTouchDown:" destination="-1" eventType="touchDown" id="A65-DJ-Wfr"/>
+                        <action selector="slideValueChanged:" destination="-1" eventType="valueChanged" id="fIO-fp-5s2"/>
+                    </connections>
                 </slider>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里显示歌曲文件名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pod-Cx-RJH">
                     <rect key="frame" x="8" y="448" width="200" height="21"/>

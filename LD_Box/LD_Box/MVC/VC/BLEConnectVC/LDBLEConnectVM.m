@@ -122,11 +122,15 @@
 }
 
 -(void)disconnectedPeripheral:(CBPeripheral*) peripheral {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(disconnectedPeripheralFinished)]) {
+        [self.delegate disconnectedPeripheralFinished];
+    }
 }
 
 -(void)disconnectedPeripheral:(CBPeripheral*) peripheral initiative:(BOOL)onInitiative {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(disconnectedPeripheralFinished:)]) {
+        [self.delegate disconnectedPeripheralFinished:onInitiative];
+    }
 }
 
 
