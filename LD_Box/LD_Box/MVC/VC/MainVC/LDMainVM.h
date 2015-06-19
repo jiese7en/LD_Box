@@ -1,8 +1,8 @@
 //
-//  LDBLEConnectVM.h
+//  LDMainVM.h
 //  LD_Box
 //
-//  Created by Jay on 15/6/2.
+//  Created by Jay on 15/6/18.
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
@@ -11,36 +11,16 @@
 #import "LDBluzDeviceModel.h"
 #import "BluzManager.h"
 
-@protocol LDBLEConnectVMDelegate <NSObject>
 
-- (void)foundPeripheralFinished;
+@protocol LDMainVMDelegate <NSObject>
 
-- (void)connectedPeripheralFinished;
-
-- (void)disconnectedPeripheralFinished;
-
-- (void)disconnectedPeripheralFinished:(BOOL)onInitiative;
+- (void)mainBatteryChanged:(UInt32)battery charging:(BOOL)charging;
 
 @end
 
-@interface LDBLEConnectVM : NSObject
+@interface LDMainVM : NSObject
 
-@property (nonatomic, assign) id <LDBLEConnectVMDelegate> delegate;
-
-//当前连接的设备
-@property (nonatomic, strong) LDBluzDeviceModel *curDeviceModel;
-
-
-/**
- *  例:LDBluzDeviceModel
- */
-@property (nonatomic, strong) NSMutableArray *deviceArr;
-
-
-- (void)scanStart;
-
-- (void)connect:(LDBluzDeviceModel *)deviceModel;
-
+@property (nonatomic, assign) id <LDMainVMDelegate> delegate;
 
 //是否有SD卡
 @property (nonatomic, assign) BOOL hasSDCard;
@@ -80,5 +60,8 @@
 //FeatureFolder       支持特殊目录功能标志
 @property (nonatomic, assign) BOOL isFeatureFolder;
 
+
+//开始
+- (void)start;
 
 @end

@@ -1,114 +1,46 @@
 //
-//  LDBLEConnectVM.m
+//  LDMainVM.m
 //  LD_Box
 //
-//  Created by Jay on 15/6/2.
+//  Created by Jay on 15/6/18.
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
-#import "LDBLEConnectVM.h"
+#import "LDMainVM.h"
 #import "LDBLEManager.h"
 #import "NSString+LDCategory.h"
 
-@interface LDBLEConnectVM () <ConnectDelegate, GlobalDelegate>
 
-
+@interface LDMainVM () <GlobalDelegate>
 
 @end
 
-
-@implementation LDBLEConnectVM
-
-#pragma mark - Init
+@implementation LDMainVM
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [BLE_MANGER.bluzDevice setConnectDelegate:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"NOTIFY_Connected_Peripheral" object:nil];
     }
     return self;
 }
 
 
-
 #pragma mark - property
-
-- (NSMutableArray *)deviceArr {
-    if (_deviceArr) {
-        return _deviceArr;
-    }
-    _deviceArr = [[NSMutableArray alloc] initWithCapacity:0];
-    return _deviceArr;
-}
 
 
 
 #pragma mark - Methods
 
-- (void)scanStart {
-    
-    [self.deviceArr removeAllObjects];
-    
-    [BLE_MANGER.bluzDevice scanStart];
+- (void)start {
     
 }
 
-- (void)connect:(LDBluzDeviceModel *)deviceModel {
-    
-    CBPeripheral *peripheral = deviceModel.peripheral;
-    
-    [BLE_MANGER.bluzDevice connect:peripheral];
-}
-
-#pragma mark - ConnectDelegate
-
--(void)foundPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData {
-    
-    NSString *deviceName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
-    
-    if (deviceName && deviceName.length) {
-        LDBluzDeviceModel *deviceModel = [[LDBluzDeviceModel alloc] init];
-        deviceModel.deviceName = deviceName;
-        deviceModel.peripheral = peripheral;
+#pragma mark - NSNotification
+- (void)handleNotification:(NSNotification *)notification {
+    if ([notification.name isEqualToString:@"NOTIFY_Connected_Peripheral"]) {
         
-        [self.deviceArr addObject:deviceModel];
-    }
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(foundPeripheralFinished)]) {
-        [self.delegate foundPeripheralFinished];
-    }
-    
-    
-}
-
--(void)connectedPeripheral:(CBPeripheral*) peripheral {
-    
-    for (LDBluzDeviceModel *deviceModel in self.deviceArr) {
-        if ([deviceModel isPeripheral:peripheral]) {
-            self.curDeviceModel = deviceModel;
-        }
-    }
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(connectedPeripheralFinished)]) {
-        [self.delegate connectedPeripheralFinished];
-    }
-    
-    BLE_MANGER.bluzManager = [[BluzManager alloc] initWithConnector:BLE_MANGER.bluzDevice];
-    [BLE_MANGER creatGlobalManager:self];
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFY_Connected_Peripheral" object:nil];
-
-    
-}
-
--(void)disconnectedPeripheral:(CBPeripheral*) peripheral {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(disconnectedPeripheralFinished)]) {
-        [self.delegate disconnectedPeripheralFinished];
-    }
-}
-
--(void)disconnectedPeripheral:(CBPeripheral*) peripheral initiative:(BOOL)onInitiative {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(disconnectedPeripheralFinished:)]) {
-        [self.delegate disconnectedPeripheralFinished:onInitiative];
+        [BLE_MANGER creatGlobalManager:self];
     }
 }
 
@@ -221,7 +153,9 @@
         battery -= 1;
     }
     
-
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mainBatteryChanged:charging:)]) {
+        [self.delegate mainBatteryChanged:battery charging:charging];
+    }
 }
 
 //音箱静音及音量状态变化
@@ -294,5 +228,6 @@
         NSLog(@"音响信息:名称 = %@, 版本号 = %@", name, var);
     }
 }
+
 
 @end

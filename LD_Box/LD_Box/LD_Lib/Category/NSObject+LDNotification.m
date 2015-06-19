@@ -8,7 +8,30 @@
 
 #import "NSObject+LDNotification.h"
 
+#pragma mark -
+
+@implementation NSNotification(LDNotification)
+
+- (BOOL)is:(NSString *)name
+{
+    return [self.name isEqualToString:name];
+}
+
+- (BOOL)isKindOf:(NSString *)prefix
+{
+    return [self.name hasPrefix:prefix];
+}
+
+@end
+
+#pragma mark -
+
 @implementation NSObject (LDNotification)
+
++ (NSString *)NOTIFICATION
+{
+    return [NSString stringWithFormat:@"notify.%@.", [self description]];
+}
 
 - (void)handleNotification:(NSNotification *)notification
 {
@@ -39,6 +62,7 @@
 - (void)postNotification:(NSString *)name
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"postNotification");
         [[NSNotificationCenter defaultCenter] postNotificationName:name object:nil];
     });
 }

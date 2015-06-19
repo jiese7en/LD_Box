@@ -30,6 +30,7 @@
 		696BA5911B1DE32700B04259 /* libiBluz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 696BA5901B1DE32700B04259 /* libiBluz.a */; };
 		696BA5941B1DE78A00B04259 /* LDBLEConnectVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */; };
 		696BA5971B1DE88D00B04259 /* LDBluzDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */; };
+		696F60731B33038900009A1F /* LDMainVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 696F60721B33038900009A1F /* LDMainVM.m */; };
 		697E2A8E1B29F29600D42A8D /* LDLineinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A8C1B29F29600D42A8D /* LDLineinVC.m */; };
 		697E2A8F1B29F29600D42A8D /* LDLineinVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */; };
 		697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 697E2A911B29F37100D42A8D /* LDLineinVM.m */; };
@@ -140,6 +141,9 @@
 		696BA5931B1DE78A00B04259 /* LDBLEConnectVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBLEConnectVM.m; sourceTree = "<group>"; };
 		696BA5951B1DE88D00B04259 /* LDBluzDeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBluzDeviceModel.h; sourceTree = "<group>"; };
 		696BA5961B1DE88D00B04259 /* LDBluzDeviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBluzDeviceModel.m; sourceTree = "<group>"; };
+		696F60711B33038900009A1F /* LDMainVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMainVM.h; sourceTree = "<group>"; };
+		696F60721B33038900009A1F /* LDMainVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMainVM.m; sourceTree = "<group>"; };
+		696F60741B330FD000009A1F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		697E2A8B1B29F29600D42A8D /* LDLineinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLineinVC.h; sourceTree = "<group>"; };
 		697E2A8C1B29F29600D42A8D /* LDLineinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDLineinVC.m; sourceTree = "<group>"; };
 		697E2A8D1B29F29600D42A8D /* LDLineinVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDLineinVC.xib; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 			children = (
 				690F98E01B0E201100C39BC5 /* Info.plist */,
 				690F98AE1B0E15DC00C39BC5 /* main.m */,
+				696F60741B330FD000009A1F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			path = Supporting_Files;
@@ -474,6 +479,8 @@
 				69F3464E1B18674200F8D69C /* LDMainVC.h */,
 				69F3464F1B18674200F8D69C /* LDMainVC.m */,
 				69F346501B18674200F8D69C /* LDMainVC.xib */,
+				696F60711B33038900009A1F /* LDMainVM.h */,
+				696F60721B33038900009A1F /* LDMainVM.m */,
 			);
 			path = MainVC;
 			sourceTree = "<group>";
@@ -886,6 +893,7 @@
 				697E2A921B29F37100D42A8D /* LDLineinVM.m in Sources */,
 				699FEE891B25CAE40018F141 /* LDMusicLrcVC.m in Sources */,
 				69F763371B28A60900C89F6F /* NSArray+LDCategory.m in Sources */,
+				696F60731B33038900009A1F /* LDMainVM.m in Sources */,
 				69F346511B18674200F8D69C /* LDMainVC.m in Sources */,
 				699FEE941B25D8F80018F141 /* LDMusicBoxVM.m in Sources */,
 				690F98AF1B0E15DC00C39BC5 /* main.m in Sources */,

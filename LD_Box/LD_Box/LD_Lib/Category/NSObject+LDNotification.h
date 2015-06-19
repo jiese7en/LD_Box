@@ -8,7 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+
+@interface NSNotification(LDNotification)
+
+- (BOOL)is:(NSString *)name;
+- (BOOL)isKindOf:(NSString *)prefix;
+
+@end
+
+
+
 @interface NSObject (LDNotification)
+
++ (NSString *)NOTIFICATION;
 
 // 处理通知
 - (void)handleNotification:(NSNotification *)notification;

@@ -38,7 +38,7 @@
 
 + (LDDrawerVC *)createDrawer {
     
-    LDMainVC *mainVC = [[LDMainVC alloc] init];
+    LDMainVC *mainVC = [LDMainVC sharedInstance];
     LDBaseNC *mainNC = [[LDBaseNC alloc] initWithRootViewController:mainVC];
     
     LDLeftMenuVC *leftMenuVC = [[LDLeftMenuVC alloc] init];

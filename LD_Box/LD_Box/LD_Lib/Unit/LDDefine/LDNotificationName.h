@@ -10,4 +10,8 @@
 #define LD_Box_LDNotificationName_h
 
 
+//连接设备成功
+static NSString *NOTIFY_Connected_Peripheral = @"NOTIFY_Connected_Peripheral";
+
+
 #endif

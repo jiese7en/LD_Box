@@ -13,4 +13,9 @@
 //单例
 + (LDMainVC *)sharedInstance;
 
+
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *batteryImgView;
+
 @end
