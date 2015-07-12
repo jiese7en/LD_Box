@@ -6,6 +6,8 @@
 //  Copyright (c) 2015年 LD. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 #ifndef LD_Box_LDDevice_h
 #define LD_Box_LDDevice_h
 

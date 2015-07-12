@@ -16,6 +16,10 @@
 
 - (void)mainBatteryChanged:(UInt32)battery charging:(BOOL)charging;
 
+- (void)mainVolumeChanged:(UInt32)current max:(UInt32)max min:(UInt32)min isMute:(BOOL)mute;
+
+- (void)mainConnectedPeripheralFinished;
+
 @end
 
 @interface LDMainVM : NSObject

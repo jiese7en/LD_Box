@@ -9,7 +9,7 @@
 #import "LDMainVM.h"
 #import "LDBLEManager.h"
 #import "NSString+LDCategory.h"
-
+#import "LDNotificationName.h"
 
 @interface LDMainVM () <GlobalDelegate>
 
@@ -20,7 +20,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"NOTIFY_Connected_Peripheral" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:NOTIFY_Connected_Peripheral object:nil];
     }
     return self;
 }
@@ -38,9 +38,15 @@
 
 #pragma mark - NSNotification
 - (void)handleNotification:(NSNotification *)notification {
-    if ([notification.name isEqualToString:@"NOTIFY_Connected_Peripheral"]) {
+    if ([notification.name isEqualToString:NOTIFY_Connected_Peripheral]) {
         
+        BLE_MANGER.bluzManager = [[BluzManager alloc] initWithConnector:BLE_MANGER.bluzDevice];
         [BLE_MANGER creatGlobalManager:self];
+        
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(mainConnectedPeripheralFinished)]) {
+            [self.delegate mainConnectedPeripheralFinished];
+        }
     }
 }
 
@@ -160,6 +166,11 @@
 
 //音箱静音及音量状态变化
 -(void)volumeChanged:(UInt32)current max:(UInt32)max min:(UInt32)min isMute:(BOOL)mute {
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(mainVolumeChanged:max:min:isMute:)]) {
+        [self.delegate mainVolumeChanged:current max:max min:min isMute:mute];
+    }
+    
     
 }
 

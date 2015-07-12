@@ -8,6 +8,8 @@
 
 #import "LDMainVC.h"
 #import "LDMainVM.h"
+#import "LDBLEManager.h"
+
 
 @interface LDMainVC () <LDMainVMDelegate>
 
@@ -47,6 +49,8 @@
     [super viewDidLoad];
     
     [self.viewModel start];
+    
+    
 }
 
 
@@ -77,4 +81,39 @@
 
 }
 
+- (void)mainVolumeChanged:(UInt32)current max:(UInt32)max min:(UInt32)min isMute:(BOOL)mute {
+    if(mute){
+        self.soundBtn.selected = YES;
+    }
+    else{
+        self.soundBtn.selected = NO;
+    }
+    self.soundSlide.maximumValue = max;
+    self.soundSlide.minimumValue = min;
+    self.soundSlide.value = current;
+}
+
+- (void)mainConnectedPeripheralFinished {
+    if (BLE_MANGER.curDeviceModel) {
+        self.nameLabel.text = BLE_MANGER.curDeviceModel.deviceName;
+    }
+    else {
+        self.nameLabel.text = @"未连接";
+    }
+}
+
+
+#pragma mark - Action
+
+- (IBAction)clickSoundBtn:(UIButton *)sender {
+    
+    [BLE_MANGER.globalManager switchMute];
+}
+
+- (IBAction)clickSoundSlide:(UISlider *)sender {
+    
+    UInt32 nVal = self.soundSlide.value;
+    [BLE_MANGER.globalManager setVolume:nVal];
+    
+}
 @end

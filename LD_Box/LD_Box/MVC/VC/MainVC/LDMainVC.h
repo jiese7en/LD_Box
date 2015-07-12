@@ -15,7 +15,12 @@
 
 
 
-
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *batteryImgView;
+@property (weak, nonatomic) IBOutlet UILabel *batteryLabel;
+@property (weak, nonatomic) IBOutlet UISlider *soundSlide;
+@property (weak, nonatomic) IBOutlet UIButton *soundBtn;
+- (IBAction)clickSoundBtn:(UIButton *)sender;
+- (IBAction)clickSoundSlide:(UISlider *)sender;
 
 @end

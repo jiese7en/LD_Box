@@ -7,6 +7,8 @@
 //
 
 #import "NSArray+LDCategory.h"
+#import "LDBluzDeviceModel.h"
+#import "LDDevice.h"
 
 @implementation NSArray (LDCategory)
 
@@ -36,6 +38,40 @@
             }
         }
     }
+}
+
+
+
++ (NSMutableArray *)sortDeviceArr:(NSMutableArray *)arr {
+    NSArray *newArr = [arr sortedArrayUsingComparator:^(id obj1,id obj2) {
+        LDBluzDeviceModel *m1 = (LDBluzDeviceModel *)obj1;
+        LDBluzDeviceModel *m2 = (LDBluzDeviceModel *)obj2;
+        
+        CBPeripheral *device1 = m1.peripheral;
+        NSString *name1 = m1.deviceName;
+        
+        CBPeripheral *device2 = m2.peripheral;
+        NSString *name2 = m2.deviceName;
+        
+        BOOL isConnected1 = NO;
+        BOOL isConnected2 = NO;
+        if (IS_LATER_IOS7) {
+            isConnected1 = device1.state == CBPeripheralStateConnected ? YES : NO;
+            isConnected2 = device2.state == CBPeripheralStateConnected ? YES : NO;
+        } else {
+            isConnected1 = device1.isConnected;
+            isConnected2 = device2.isConnected;
+        }
+        
+        if (isConnected1 && !isConnected2) {
+            return (NSComparisonResult)NSOrderedAscending;
+        } else if (!isConnected1 && isConnected2) {
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+        
+        return [name1 compare:name2 options:NSLiteralSearch];
+    }];
+    return [newArr mutableCopy];
 }
 
 @end

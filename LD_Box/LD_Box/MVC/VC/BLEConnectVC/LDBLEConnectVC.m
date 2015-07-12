@@ -11,7 +11,7 @@
 #import "LDBluzDeviceModel.h"
 #import "SVProgressHUD.h"
 
-@interface LDBLEConnectVC () <UITableViewDataSource, UITableViewDelegate, LDBLEConnectVMDelegate>
+@interface LDBLEConnectVC () <UITableViewDataSource, UITableViewDelegate, LDBLEConnectVMDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) LDBLEConnectVM *viewModel;
 @property (weak, nonatomic) IBOutlet UITableView *deviceTableView;
@@ -52,6 +52,8 @@
     [self layoutTableView];
     
     [self layoutRightItem];
+    
+    [self.viewModel start];
 }
 
 - (void)layoutTableView {
@@ -130,6 +132,15 @@
         [self.viewModel connect:deviceModel];
     }
 }
+
+
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        [self.viewModel disconnect];
+    }
+}
+
 
 #pragma mark - LDBLEConnectVMDelegate
 - (void)foundPeripheralFinished {
